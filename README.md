@@ -21,3 +21,58 @@ The Avenue Louise website is based on the Code Institute Boutique Ado walkthroug
 * [Testing](#testing)
 * [Deployment](#deployment)
 * [Credits](#credits)
+
+## User Experience (UX)
+
+### User stories :
+
+
+## Features
+
+### Existing Features
+
+
+### Future Features 
+
+
+## Design
+
+-   ### Wireframes
+
+-   ### Entity-Relationship diagram for DBMS
+
+
+## Planning
+
+
+## Technologies Used
+
+### Languages Used 
+
+-   [HTML5](https://en.wikipedia.org/wiki/HTML5)
+-   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+-   [Python](https://www.python.org/)
+
+### Frameworks, Libraries & Programs Used  
+
+## Testing
+
+### Validator Testing 
+
+### Manual Testing Test Cases and Results 
+
+### Known bugs
+
+
+## Deployment 
+
+
+## Credits 
+
+### Code 
+
+### Content 
+
+### Media 
+
+### Acknowledgments
