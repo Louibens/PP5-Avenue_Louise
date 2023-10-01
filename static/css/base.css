@@ -26,16 +26,12 @@ main {
     background-color: var(--white);
 }
 
-header {
-    background-color: white !important;
+header {    
     box-shadow: 1px 1px 7px 0 #00000061 !important;
-    height: 160px !important;
-
 }
 
-
 .hero-img {
-    padding-top: 300px;
+    margin-top: 250px;
     width: 100% !important;
     background: url('/static/images/weaving-xsection.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -52,7 +48,7 @@ header {
 
 
 .logo {
-    width: 12rem;
+    width: 11rem;
     overflow: hidden;
     margin-top: -20px
 }
