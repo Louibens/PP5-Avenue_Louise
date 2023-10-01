@@ -50,5 +50,18 @@
           "image_url":"",
           "image":"rainbox-framed.jpg"
        }
-    }
+    },
+    {
+        "pk":5,
+        "model":"products.product",
+        "fields":{
+           "sku":"pp5002111605",
+           "name":"Small round woven lampshade",
+           "description":"One of a kind handwoven lampshade using a mixture of luxury and rescued wools. Please note this listing is for the lampshade only.",
+           "price":75,
+           "category":1,
+           "image_url":"",
+           "image":"round-small-lampshade.jpg"
+        }
+     }
 ]

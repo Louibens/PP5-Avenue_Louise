@@ -40,13 +40,16 @@
     <title>Avenue Louise {% block extra_title %}{% endblock %} </title>
 </head>
 
-<body>
+<body>{% block page_header %}
+    {% endblock %}
     <header class="container-fluid fixed-top header-container">
     {% include 'includes/header.html' %}
 </header>   
     {% if messages %}
         <div class="message-container"></div>
     {% endif %}
+
+    
     <main>
         {% block content %}
 
