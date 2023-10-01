@@ -1,0 +1,19 @@
+[
+    {
+       "pk":1,
+       "model":"products.category",
+       "fields":{
+          "name":"lampshade",
+          "friendly_name":"Lampshade"
+       }
+    },
+    {
+       "pk":2,
+       "model":"products.category",
+       "fields":{
+          "name":"wall-art",
+          "friendly_name":"Wall Art"
+       }
+    }
+
+ ]

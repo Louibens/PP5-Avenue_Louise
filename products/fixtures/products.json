@@ -1,0 +1,54 @@
+[
+    {
+       "pk":1,
+       "model":"products.product",
+       "fields":{
+          "sku":"pp5001340155",
+          "name":"Large woven lampshade",
+          "description":"One of a kind handwoven lampshade using a mixture of luxury and rescued wools. The frame is also rescued and upcycled. Please note this listing is for the lampshade only.",
+          "price":250,
+          "category":1,
+          "image_url":"",
+          "image":"large-lampshade.jpg"
+       }
+    },
+    {
+       "pk":2,
+       "model":"products.product",
+       "fields":{
+          "sku":"pp5001600425",
+          "name":"Abstract aerial Irish landscape",
+          "description":"This abstract landscape tapestry is full of rich colour and texture. Made using high quality fibers along with rescued yarns, including velvet ribbons, wool roving, recycled cottons, hand dyed silk gauze.",
+          "price":75,
+          "category":2,
+          "image_url":"",
+          "image":"abstract-landscape.jpg"
+       }
+    },
+    {
+       "pk":3,
+       "model":"products.product",
+       "fields":{
+          "sku":"pp5001730010",
+          "name":"Small woven lampshade",
+          "description":"One of a kind handwoven lampshade using a mixture of luxury and rescued wools. The frame is also rescued and upcycled. Please note this listing is for the lampshade only.",
+          "price":75,
+          "category":1,
+          "image_url":"",
+          "image":"small-lampshade.jpg"
+       }
+    },
+    {
+       "pk":4,
+       "model":"products.product",
+       "fields":{
+          "sku":"pp5001890157",
+          "name":"Framed rainbow weaving",
+          "description":"This unique piece is hand woven using high quality un-spun merino wool in rainbow colors sourced from another small Irish business and set in a blue frame.",
+          "price":65,
+          "category":2,
+          "image_url":"",
+          "image":"rainbox-framed.jpg"
+       }
+    }
+]
