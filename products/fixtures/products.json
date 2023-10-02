@@ -64,4 +64,18 @@
            "image":"round-small-lampshade.jpg"
         }
      }
+     ,
+    {
+        "pk":6,
+        "model":"products.product",
+        "fields":{
+           "sku":"pp5002111615",
+           "name":"Boho looped fringe earrings",
+           "description":"These boho fringe earrings are super lightweight and comfortable to wear. They are fitted with lead and nickel free stud posts with rubber backs.",
+           "price":20,
+           "category":3,
+           "image_url":"",
+           "image":"black_gold_earring.jpg"
+        }
+     }
 ]

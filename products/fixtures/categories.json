@@ -14,6 +14,14 @@
           "name":"wall-art",
           "friendly_name":"Wall Art"
        }
+    },
+    {
+       "pk":3,
+       "model":"products.category",
+       "fields":{
+          "name":"earrings",
+          "friendly_name":"Earrings"
+       }
     }
 
  ]
