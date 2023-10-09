@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Raleway&display=swap');
 
-html, body {
+html {
     height: 100%
 }
 
@@ -21,10 +21,6 @@ body {
     width: 1.5rem;
 }
 
-main {
-    flex: 1 0 auto;
-    background-color: var(--white);
-}
 
 header {    
     box-shadow: 1px 1px 7px 0 #00000061 !important;
@@ -136,6 +132,8 @@ footer {
     padding: 5px;
     color: black
 }
+
+
 
 @media (min-width: 1200px)
 {
