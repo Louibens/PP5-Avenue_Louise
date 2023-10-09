@@ -6,6 +6,8 @@
           "sku":"pp5001340155",
           "name":"Large woven lampshade",
           "description":"One of a kind handwoven lampshade using a mixture of luxury and rescued wools. The frame is also rescued and upcycled. Please note this listing is for the lampshade only.",
+          "height": 31,
+         "width": 41,
           "price":250,
           "category":1,
           "image_url":"",
@@ -19,6 +21,8 @@
           "sku":"pp5001600425",
           "name":"Abstract aerial Irish landscape",
           "description":"This abstract landscape tapestry is full of rich colour and texture. Made using high quality fibers along with rescued yarns, including velvet ribbons, wool roving, recycled cottons, hand dyed silk gauze.",
+          "height": 37,
+         "width": 28,
           "price":75,
           "category":2,
           "image_url":"",
@@ -26,29 +30,33 @@
        }
     },
     {
-       "pk":3,
-       "model":"products.product",
-       "fields":{
-          "sku":"pp5001730010",
-          "name":"Small woven lampshade",
-          "description":"One of a kind handwoven lampshade using a mixture of luxury and rescued wools. The frame is also rescued and upcycled. Please note this listing is for the lampshade only.",
-          "price":75,
-          "category":1,
-          "image_url":"",
-          "image":"small-lampshade.jpg"
+      "pk":3,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001730010",
+         "name":"Small woven lampshade",
+         "description":"One of a kind handwoven lampshade using a mixture of luxury and rescued wools. The frame is also rescued and upcycled. Please note this listing is for the lampshade only.",
+         "height": 19,
+         "width": 21,
+         "price":75,
+         "category":1,
+         "image_url":"",
+         "image":"small-lampshade.jpg"
        }
     },
     {
-       "pk":4,
-       "model":"products.product",
-       "fields":{
-          "sku":"pp5001890157",
-          "name":"Framed rainbow weaving",
-          "description":"This unique piece is hand woven using high quality un-spun merino wool in rainbow colors sourced from another small Irish business and set in a blue frame.",
-          "price":65,
-          "category":2,
-          "image_url":"",
-          "image":"rainbow-framed.jpg"
+      "pk":4,
+      "model":"products.product",
+      "fields":{
+      "sku":"pp5001890157",
+         "name":"Framed rainbow weaving",
+         "description":"This unique piece is hand woven using high quality un-spun merino wool in rainbow colors sourced from another small Irish business and set in a blue frame.",
+         "height": 19,
+         "width": 21,
+         "price":65,
+         "category":2,
+         "image_url":"",
+         "image":"rainbow-framed.jpg"
        }
     },
     {
@@ -58,6 +66,8 @@
            "sku":"pp5002111605",
            "name":"Small round woven lampshade",
            "description":"One of a kind handwoven lampshade using a mixture of luxury and rescued wools. Please note this listing is for the lampshade only.",
+           "height": 19,
+           "width": 21,
            "price":75,
            "category":1,
            "image_url":"",
@@ -72,6 +82,8 @@
            "sku":"pp5002111615",
            "name":"Boho looped fringe earrings",
            "description":"These boho fringe earrings are super lightweight and comfortable to wear. They are fitted with lead and nickel free stud posts with rubber backs.",
+           "height": 6,
+           "width": 2,
            "price":20,
            "category":3,
            "image_url":"",

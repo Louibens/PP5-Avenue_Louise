@@ -37,6 +37,7 @@
                         </p>
                     {% endif %}
                     <p class="mt-3">{{ product.description }}</p>
+                    <p class="mb-0"><strong>Size</strong> {{ product.height }}cm x {{ product.width }}cm</p>
                     <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
                         {% csrf_token %}
                         <div class="form-row">
