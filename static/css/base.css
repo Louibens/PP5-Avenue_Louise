@@ -23,7 +23,7 @@ body {
 
 
 header {    
-    box-shadow: 1px 1px 7px 0 #00000061 !important;
+    background-color: #e8c7c8
 }
 
 .hero-img {
@@ -40,6 +40,7 @@ header {
     margin: 50px;
     position: relative;
     color: black;
+    z-index: -10
 }
 
 
@@ -169,4 +170,3 @@ footer {
     max-width: 2000px !important
 }
 }
-
