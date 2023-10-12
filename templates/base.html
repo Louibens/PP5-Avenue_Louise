@@ -34,7 +34,7 @@
     {% block extra_js %}
     {% endblock %}
 
-    <title>Boutique Ado {% block extra_title %}{% endblock %}</title>
+    <title>Avenue Louise {% block extra_title %}{% endblock %}</title>
   </head>
   <body>
     <header class="container-fluid fixed-top">
@@ -133,10 +133,11 @@
 
     {% block page_header %}
     {% endblock %}
-
+<main>
     {% block content %}
+    
     {% endblock %}
-
+</main>
     {% include 'includes/footer.html' %}
 
     {% block postloadjs %}
