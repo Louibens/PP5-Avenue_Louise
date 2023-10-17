@@ -10,10 +10,11 @@ from checkout.models import Order
 @login_required
 def profile(request):
     """ Display the users profile """
+    profile = get_object_or_404(UserProfile, user=request.user)
 
     template = 'profiles/profile.html'
     context = {
-
+        'profile': profile,
     }
 
     return render(request, template, context)
