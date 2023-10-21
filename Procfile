@@ -1,0 +1,1 @@
+web: gunicorn avenue_louise.wsgi:application
