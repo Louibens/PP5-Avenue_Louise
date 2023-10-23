@@ -308,6 +308,11 @@ footer {
     border-radius: 0;
 }
 
+.sold {
+    opacity: 0.5;
+}
+
+
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
