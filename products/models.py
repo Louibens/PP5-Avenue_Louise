@@ -28,3 +28,11 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+    
+    def change_in_stock(self):
+        """ automatically change stock label """
+        if self.count == 0:
+            self.in_stock = False
+        else:
+            self.in_stock = True
+        self.save()

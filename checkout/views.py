@@ -55,6 +55,14 @@ def checkout(request):
             order.stripe_pid = pid
             order.original_bag = json.dumps(bag)
             order.save()
+            # for each item & quantity
+            for pk, quantity in bag.items():
+                product = Product.objects.get(pk=pk)
+                product.count = 1 - 1
+                if product.count == 0:
+                    product.change_in_stock()
+                    product.save()
+                    print(product.in_stock)
             for item_id, item_data in bag.items():
                 try:
                     product = Product.objects.get(id=item_id)
