@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Workshops{% endblock %}
+
+
+{% block content %}
+
+<div class="container flex-column pt-3">
+    <section class="text-center">
+        <h1 class="main-title mx-auto">Discover the magic of making</h1>
+        <p class="pt-4">
+            We'd love to see you at one of our upcoming workshops
+        </p>
+    </section>
+    <section>
+        <div class="workshop-cont">
+            {% for workshop in workshops %}
+                <a href="{% url 'workshops' workshop.id %}" class="img-container" aria-label="Click to view {{workshop.name}}">
+                    <div class="card m-3" style="width: 18rem;">
+                        <img class="card-img-top" src="{{workshop.image.url}}" alt="{{workshop.image_alt}}">
+                        <div class="card-body">
+                          <h2 class="card-title">{{workshop.name}}</h2>
+                          <p class="card-text">{{workshop.description|truncatechars:100}}</p>
+                        </div>
+                      </div>
+            {% endfor %}
+        </div>
+    </section>
+</div>
+{% endblock %}

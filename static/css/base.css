@@ -80,9 +80,7 @@ header {
     background: #000 !important;
 }
 
-.header-container {
-    padding-top: 260px;
-}
+
 
 .product-container {
     padding-top: 50px;
@@ -307,11 +305,6 @@ footer {
     border-color: #dc3545;
     border-radius: 0;
 }
-
-.sold {
-    opacity: 0.5;
-}
-
 
 
 /* fixed top navbar only on medium and up */
