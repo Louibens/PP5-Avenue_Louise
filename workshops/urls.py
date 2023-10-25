@@ -1,8 +1,7 @@
 from django.contrib import admin
 from django.urls import path
-from . import views
-from .views import workshops
+from .views import Workshops
 
 urlpatterns = [
-    path('', views.workshops, name='workshops'),
+    path('', Workshops.as_view(), name='workshops'),
 ]

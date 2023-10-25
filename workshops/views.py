@@ -1,26 +1,23 @@
 from django.shortcuts import render
-from .models import Workshops
 
+from django.views.generic import ListView
+from .models import Workshops
 # Create your views here.
 
-def workshops(request):
-    """ A view to show all workshops includng sorting and search queries """
 
-    workshops = Workshops.objects.all()
-    query = None
+class Workshops(ListView):
+    """View all workshops"""
 
-    if 'q' in request.GET:
-        query = request.GET['q']
-        if not query:
-            messages.error(request, "You didn't enter any search criteria!")
-            return redirect(reverse('workshops'))
-            
-        queries = Q(name__icontains=query) | Q(description__icontains=query)
-        workshops = workshops.filter(queries)
+    template_name = "workshops/workshops.html"
+    model = Workshops
+    context_object_name = "workshops"
 
-    context = {
-        'workshops': workshops,
-        'search_term': query,
-    }
-
-    return render(request, 'workshops/workshops.html', context)
+    def get_queryset(self, **kwargs):
+        query = self.request.GET.get('q')
+        if query:
+            workshops = self.model.objects.filter(
+                Q(name__icontains=query) |
+                Q(description__icontains=query))
+        else:
+            workshops = self.model.objects.all()
+        return workshops

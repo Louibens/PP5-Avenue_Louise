@@ -15,4 +15,4 @@ class Workshops(models.Model):
         ordering = ['date']
 
     def __str__(self):
-        return self.title
+        return self.name

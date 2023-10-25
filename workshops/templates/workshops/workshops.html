@@ -16,9 +16,8 @@
     <section>
         <div class="workshop-cont">
             {% for workshop in workshops %}
-                <a href="{% url 'workshops' workshop.id %}" class="img-container" aria-label="Click to view {{workshop.name}}">
+                <a href="{% url 'workshops' %}" class="img-container" aria-label="Click to view {{workshop.name}}">
                     <div class="card m-3" style="width: 18rem;">
-                        <img class="card-img-top" src="{{workshop.image.url}}" alt="{{workshop.image_alt}}">
                         <div class="card-body">
                           <h2 class="card-title">{{workshop.name}}</h2>
                           <p class="card-text">{{workshop.description|truncatechars:100}}</p>
