@@ -1,4 +1,5 @@
 from django.db import models
+from django_resized import ResizedImageField
 
 # Create your models here.
 
@@ -9,7 +10,15 @@ class Workshops(models.Model):
     location = models.CharField(max_length=254)
     date = models.DateTimeField()
     spaces = models.DecimalField(max_digits=6, decimal_places=2)
-    image = models.ImageField(null=True, blank=True)
+    image = ResizedImageField(
+        size=[400, None],
+        quality=75,
+        upload_to="workshops/",
+        force_format="WEBP",
+        blank=False,
+        null=False,
+        default='No image'
+    )
 
     class Meta:
         ordering = ['date']

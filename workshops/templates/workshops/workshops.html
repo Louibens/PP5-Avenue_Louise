@@ -14,16 +14,19 @@
         </p>
     </section>
     <section>
-        <div class="workshop-cont">
+        <div class="container d-flex flex-row flex-wrap justify-content-center workshop-cont">
             {% for workshop in workshops %}
                 <a href="{% url 'workshops' %}" class="img-container" aria-label="Click to view {{workshop.name}}">
                     <div class="card m-3" style="width: 18rem;">
+                        <img class="card-img-top" src="{{workshop.image.url}}" alt="{{workshop.image_alt}}">
                         <div class="card-body">
                           <h2 class="card-title">{{workshop.name}}</h2>
                           <p class="card-text">{{workshop.description|truncatechars:100}}</p>
                         </div>
                       </div>
+                </a>
             {% endfor %}
+           
         </div>
     </section>
 </div>

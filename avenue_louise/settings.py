@@ -189,6 +189,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 FREE_DELIVERY_THRESHOLD = 50
 STANDARD_DELIVERY_PERCENTAGE = 10
 
+AWS_S3_ADDRESSING_STYLE = "path"
+
 if 'USE_AWS' in os.environ:
     # Cache control
     AWS_S3_OBJECT_PARAMETERS = {

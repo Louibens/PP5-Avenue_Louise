@@ -6,7 +6,7 @@ class WorkshopsForm(forms.ModelForm):
     """Form to create a workshop"""
 
     class Meta:
-        model = Workshop
+        model = Workshops
         fields = [
             "name",
             "description",
@@ -28,4 +28,6 @@ class WorkshopsForm(forms.ModelForm):
             "location": "Workshop Location",
             "date": "Workshop Date",
             "space": "Spaces",
+            "image": "Workshop Image",
+
         }
