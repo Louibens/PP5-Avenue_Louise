@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-from django.views.generic import CreateView, ListView
+from django.views.generic import CreateView, ListView, DetailView
 
 from .models import Workshops
 from .forms import WorkshopsForm
@@ -11,7 +11,7 @@ from django.contrib.auth.mixins import (
 # Create your views here.
 
 
-class Workshops(ListView):
+class WorkshopsView(ListView):
     """View all workshops"""
 
     template_name = "workshops/workshops.html"
@@ -27,6 +27,14 @@ class Workshops(ListView):
         else:
             workshops = self.model.objects.all()
         return workshops
+
+
+class WorkshopDetail(DetailView):
+    """View as a single workshop"""
+
+    template_name = "workshops/workshop_detail.html"
+    model = Workshops
+    context_object_name = "workshop"
 
 
 class AddWorkshop(LoginRequiredMixin, CreateView):

@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}Workshop Detail - {{workshop.title}}{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="workshop-info mt-3 p-1">
+            <div class="workshop-img workshop-pic">
+                <img src="{{ workshop.image.url }}" alt="{{ workshop.image_alt }}" class="card-img-top" style="max-width: 20%">
+            </div>
+            <div class="workshop-detail">
+                <h1 class="text-center">{{ workshop.name }}</h1>
+                <hr>
+                <p>{{workshop.description}}</p>
+                <p><strong>Date: </strong>{{workshop.date}}</p>
+                <p><strong>Location: </strong>{{workshop.location}}</p>
+                <p><strong>Price: </strong>{{workshop.price}}</p>
+
+                {% if request.user.is_superuser %}
+                    <small class="ml-3">
+                        <a href="">Edit</a> |
+                        <a href="" class="text-danger">Delete</a>
+                    </small>
+                {% endif %}
+
+                <div class="col{% if s %}-12 mt-2{% endif %}">
+                    <a href="{% url 'workshops' %}" class="btn btn-outline-black rounded-0 mt-5">
+                        <span class="icon">
+                            <i class="fas fa-chevron-left"></i>
+                        </span>
+                        <span class="text-uppercase">Keep Shopping</span>
+                    </a>
+                    <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5" value="Contact us to book in">
+                </div>
+                <input type="hidden" name="redirect_url" value="{{ request.path }}"> 
+                
+            </div>
+        </div>
+        
+    </div>
+{% endblock %}

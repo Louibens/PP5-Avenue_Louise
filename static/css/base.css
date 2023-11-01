@@ -222,6 +222,45 @@ header {
     overflow-y: auto;
 }
 
+/* Workshops */
+
+.workshop-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.workshop-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.workshop-detail {
+    width: 100%
+}
+
+.workshop-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.workshop-pic {
+    width: 100%;
+    height: auto
+}
+
+.workshop-pic {
+    max-width: 380px;
+
+}
+
+.workshop-cont {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
 
 /* Footer */
 

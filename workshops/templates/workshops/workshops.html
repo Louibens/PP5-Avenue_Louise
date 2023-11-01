@@ -16,7 +16,7 @@
     <section>
         <div class="container d-flex flex-row flex-wrap justify-content-center workshop-cont">
             {% for workshop in workshops %}
-                <a href="{% url 'workshops' %}" class="img-container" aria-label="Click to view {{workshop.name}}">
+                <a href="{% url 'workshop_detail' workshop.id %}" class="img-container" aria-label="Click to view {{workshop.name}}">
                     <div class="card m-3" style="width: 18rem;">
                         <img class="card-img-top" src="{{workshop.image.url}}" alt="{{workshop.image_alt}}">
                         <div class="card-body">
