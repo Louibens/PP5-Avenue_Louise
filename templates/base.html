@@ -9,7 +9,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     {% endblock %}
-
+        
     {% block extra_meta %}
     {% endblock %}
 
@@ -18,6 +18,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
     {% endblock %}
+        <link rel='shortcut icon' type='image/x-icon' href="{% static 'images/favicon.ico' %}">
 
     {% block extra_css %}
     {% endblock %}
@@ -98,11 +99,8 @@
                 </ul>
             </div>
         </div>
-        <div class="row bg-white">
+        <div class="row bg-white ">
             <nav class="navbar navbar-expand-lg navbar-light w-100">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
                 {% include 'includes/mobile-top-header.html' %}
                 {% include 'includes/main-nav.html' %}
             </nav>
