@@ -1,6 +1,6 @@
 <h1 align="center">Avenue Louise - Textile Arts</h1>
 
-[View the live project here](https://avenue-louise.herokuapp.com/)
+[View the live project here](https://avenue-louise-d68884ca43c9.herokuapp.com/)
 
 Avenue Louise is a B2C e-commerce application which sells textile arts. Users can view, search and filter the products on offer, add products to their shopping cart and purchase through a secure single payment.
 
