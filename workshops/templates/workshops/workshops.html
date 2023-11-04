@@ -23,8 +23,11 @@
                           <h2 class="card-title">{{workshop.name}}</h2>
                           <p class="card-text">{{workshop.description|truncatechars:100}}</p>
                         </div>
+                        <a class="btn btn-black rounded-0 text-uppercase mt-5" href="{% url 'request' %}"> Contact us to book in</a>
                       </div>
+                      
                 </a>
+                
             {% endfor %}
            
         </div>

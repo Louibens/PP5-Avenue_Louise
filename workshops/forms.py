@@ -1,5 +1,6 @@
 from django import forms
-from .models import Workshops
+from .models import Workshops, WorkshopContact
+import textwrap
 
 
 class WorkshopsForm(forms.ModelForm):
@@ -31,3 +32,29 @@ class WorkshopsForm(forms.ModelForm):
             "image": "Workshop Image",
 
         }
+
+
+class WorkshopEnquiryForm(forms.ModelForm):
+    class Meta:
+        model = WorkshopContact
+        fields = ['name', 'email', 'workshop_enquiry']
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+        self.fields['name'].widget.attrs.update({
+            'class': 'form-control',
+            'placeholder': 'Enter your name'
+        })
+
+        self.fields['email'].widget.attrs.update({
+            'class': 'form-control',
+            'placeholder': 'Enter your email address'
+        })
+
+        self.fields['workshop_enquiry'].widget.attrs.update({
+            'class': 'form-control',
+            'placeholder': textwrap.dedent('''\
+                Enter your workshop enquiry and we will get back to you with further information and booking details
+                ''')
+        })

@@ -2,8 +2,8 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.views.generic import CreateView, ListView, DetailView
 from django.contrib.auth.decorators import login_required
-from .models import Workshops
-from .forms import WorkshopsForm
+from .models import Workshops, WorkshopContact
+from .forms import WorkshopsForm, WorkshopEnquiryForm
 
 from django.contrib.auth.mixins import (
     UserPassesTestMixin, LoginRequiredMixin
@@ -91,3 +91,22 @@ def delete_workshop(request, workshop_id):
     messages.success(request, 'Workshop deleted')
 
     return redirect(reverse('workshops'))
+
+
+def WorkshopRequest(request):
+    """
+    Form for user to enquire about workshops
+    """
+    if request.method == 'POST':
+        form = WorkshopEnquiryForm(request.POST)
+        if form.is_valid():
+            workshop_request = form.save(commit=False)
+            workshop_request.save()
+            return render(request, 'workshops/workshop_request_form.html')
+    else:
+        if request.user.is_authenticated:
+            form = WorkshopEnquiryForm(initial={'email': request.user.email})
+        else:
+            form = WorkshopEnquiryForm()
+    return render(request,
+                  'workshops/workshop_request_form.html', {'form': form})
