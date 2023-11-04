@@ -8,4 +8,5 @@ urlpatterns = [
     path("add/", AddWorkshop.as_view(), name="add_workshop"),
     path("<slug:pk>/", WorkshopDetail.as_view(), name="workshop_detail"),
     path('edit/<int:workshop_id>/', views.edit_workshop, name='edit_workshop'),
+    path('delete/<int:workshop_id>/', views.delete_workshop, name='delete_workshop'),
 ]

@@ -77,3 +77,17 @@ def edit_workshop(request, workshop_id):
     }
 
     return render(request, template, context)
+
+
+@login_required
+def delete_workshop(request, workshop_id):
+    """ Delete a workshop in the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only shop owners can do that.')
+        return redirect(reverse('home'))
+        
+    workshop = get_object_or_404(Workshops, pk=workshop_id)
+    workshop.delete()
+    messages.success(request, 'Workshop deleted')
+
+    return redirect(reverse('workshops'))
