@@ -102,7 +102,7 @@ def WorkshopRequest(request):
         if form.is_valid():
             workshop_request = form.save(commit=False)
             workshop_request.save()
-            return render(request, 'workshops/workshop_request_form.html')
+            return render(request, 'workshops/workshop_request_success.html')
     else:
         if request.user.is_authenticated:
             form = WorkshopEnquiryForm(initial={'email': request.user.email})
