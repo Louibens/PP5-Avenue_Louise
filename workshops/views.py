@@ -1,7 +1,7 @@
-from django.shortcuts import render
-
+from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.contrib import messages
 from django.views.generic import CreateView, ListView, DetailView
-
+from django.contrib.auth.decorators import login_required
 from .models import Workshops
 from .forms import WorkshopsForm
 
@@ -48,3 +48,32 @@ class AddWorkshop(LoginRequiredMixin, CreateView):
     def form_valid(self, form):
         form.instance.user = self.request.user
         return super(AddWorkshop, self).form_valid(form)
+
+
+@login_required
+def edit_workshop(request, workshop_id):
+    """ Edit a workshop in the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only shop owners can do that.')
+        return redirect(reverse('home'))
+
+    workshop = get_object_or_404(Workshops, pk=workshop_id)
+    if request.method == 'POST':
+        form = WorkshopsForm(request.POST, request.FILES, instance=workshop)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully updated workshop!')
+            return redirect(reverse('workshop_detail', args=[workshop.id]))
+        else:
+            messages.error(request, 'Failed to update workshop. Please ensure the form is valid.')
+    else:
+        form = WorkshopsForm(instance=workshop)
+        messages.info(request, f'You are editing {workshop.name}')
+        
+    template = 'workshops/edit_workshop.html'
+    context = {
+        'form': form,
+        'workshop': workshop,
+    }
+
+    return render(request, template, context)
