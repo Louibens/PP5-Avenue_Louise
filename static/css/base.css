@@ -33,6 +33,7 @@ header {
 .centered {
     width: 100%;
     position: absolute;
+    background-color: #e8c7c8;
     top: 80%;
     left: 50%;
     transform: translate(-50%, -50%)
@@ -98,6 +99,31 @@ header {
 .update-link,
 .remove-item {
     cursor: pointer;
+}
+
+a.img-container {
+    position: relative;
+    text-align: center;
+    color: var(--white);
+    margin: 2%;
+    overflow: hidden;
+    text-decoration: none;
+    border: 1px solid var(--border);
+    box-shadow: var(--small-box-shadow);
+    max-width: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+a.img-container:hover {
+    color: var(--orange)
+}
+
+.img-container img {
+    width: auto;
+    height: 100%;
 }
 
 /* Allauth form formatting */

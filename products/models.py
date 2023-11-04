@@ -1,4 +1,5 @@
 from django.db import models
+from django_resized import ResizedImageField
 
 # Create your models here.
 
@@ -23,7 +24,14 @@ class Product(models.Model):
     width = models.DecimalField(max_digits=4, decimal_places=2)
     price = models.DecimalField(max_digits=6, decimal_places=2)
     image_url = models.URLField(max_length=1024, null=True, blank=True)
-    image = models.ImageField(null=True, blank=True)
+    image = ResizedImageField(
+        size=[None, 400],
+        quality=75,
+        upload_to="products/",
+        force_format="WEBP",
+        blank=False,
+        null=False,
+    )
     in_stock = models.BooleanField(default=False)
 
     def __str__(self):
