@@ -11,10 +11,7 @@ body {
     flex-direction: column;
 }
 
-main {
-    flex: 1 0 auto;
-    background-color: var(--white);
-}
+
 
 /* from Bulma */
 .icon {
@@ -26,24 +23,18 @@ main {
 }
 
 
-header {    
-    background-color: #e8c7c8
+.navbar {    
+    background-color: #e8c7c8 !important
 }
 
 .centered {
     width: 100%;
     position: absolute;
-    background-color: #e8c7c8;
     top: 80%;
     left: 50%;
     transform: translate(-50%, -50%)
 }
 
-.logo {
-    width: 11rem;
-    overflow: hidden;
-    margin-top: -20px
-}
 
 .btn-black {
     background: black;
@@ -80,8 +71,6 @@ header {
 .bg-black {
     background: #000 !important;
 }
-
-
 
 .product-container {
     padding-top: 50px;
@@ -294,7 +283,7 @@ a.img-container:hover {
     background: #fff;
     clear: left;
     font: 14px Helvetica, Arial, sans-serif;
-    width: 600px;
+    width: 100px;
 }
 
 
@@ -351,6 +340,10 @@ footer {
     margin: 0;
     padding: 5px;
     color: black
+}
+
+.mobile-logo {
+    display: none;
 }
 
 
@@ -442,5 +435,9 @@ footer {
 
     .increment-qty, .decrement-qty {
         padding: .25rem .5rem !important;
+    }
+
+    .mobile-logo {
+        display: block;
     }
 }

@@ -32,7 +32,7 @@ class Product(models.Model):
         blank=False,
         null=False,
     )
-    in_stock = models.BooleanField(default=False)
+    in_stock = models.BooleanField(default=True)
 
     def __str__(self):
         return self.name
