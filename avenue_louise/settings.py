@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['8000-louibens-pp5avenuelouis-h3hfefojg3i.ws-eu105.gitpod.io','avenue-louise-d68884ca43c9.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['8000-louibens-pp5avenuelouis-j4khd3psp4x.ws-eu106.gitpod.io','avenue-louise-d68884ca43c9.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -219,7 +219,7 @@ if 'USE_AWS' in os.environ:
 
 FREE_DELIVERY_THRESHOLD = 50
 STANDARD_DELIVERY_PERCENTAGE = 10
-STRIPE_CURRENCY = 'usd'
+STRIPE_CURRENCY = 'eur'
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
 STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
