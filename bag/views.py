@@ -15,14 +15,13 @@ def add_to_bag(request, item_id):
     """ Add specified product to the shopping bag """
 
     product = get_object_or_404(Product, pk=item_id)
-    quantity = 1
     redirect_url = request.POST.get('redirect_url')
     bag = request.session.get('bag', {})
 
-    bag[item_id] = quantity
     if item_id in bag:
         messages.warning(request, f'{product.name} already added to your bag')
     else:
+        bag[item_id] = 1
         messages.success(request, f'Added {product.name} to your bag')
 
     request.session['bag'] = bag

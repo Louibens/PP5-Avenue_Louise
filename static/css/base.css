@@ -25,6 +25,10 @@ body {
     background-color: #e8c7c8 !important
 }
 
+.active {
+    text-shadow: 2px 2px 8px black
+}
+
 .centered {
     width: 100%;
     position: absolute;
@@ -340,10 +344,6 @@ footer {
     color: black
 }
 
-.mobile-logo {
-    display: none;
-}
-
 
 /* Product Form */
 
@@ -389,7 +389,6 @@ footer {
     }
 }
 
-/* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .header-container {
         padding-top: 116px;
@@ -433,9 +432,5 @@ footer {
 
     .increment-qty, .decrement-qty {
         padding: .25rem .5rem !important;
-    }
-
-    .mobile-logo {
-        display: block;
     }
 }
