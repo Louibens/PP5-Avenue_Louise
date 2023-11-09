@@ -1,6 +1,7 @@
 {% load static %}
 
 <header class="container-fluid">
+    {% with request.resolver_match.url_name as url_name %}
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="col-lg-2 text-center text-lg-left p-0">
             <a href="{% url 'home' %}" alt="Avenue Louise logo" class="logo">
@@ -16,22 +17,20 @@
                 <li class="nav-item">
                     <a class="nav-link {% if url_name == 'home' %}active{% endif %}" href="{% url 'home' %}">Home</a>
                 </li>
-                <li class="nav-item dropdown {% if url_name == 'products' %}active{% endif %}">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle {% if url_name == 'products' %}active{% endif %}" href="#" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Shop
                     </a>
                     <div class="dropdown-menu border-0" aria-labelledby="user-options">
-
                         <a class="nav-link" href="{% url 'products' %}">All Products</a>
                         <a class="nav-link" href="{% url 'products' %}?category=wall-art">Wall Art</a>
-
                         <a class="nav-link" href="{% url 'products' %}?category=lampshade">Lampshades</a>
                         <a class="nav-link" href="{% url 'products' %}?category=earrings">Earrings</a>
                     </div>
                 </li>
-                <li class="nav-item {% if url_name == 'workshops' %}active{% endif %}">
-                    <a class="nav-link" href="{% url 'workshops' %}">Workshops</a>
+                <li class="nav-item ">
+                    <a class="nav-link {% if url_name == 'workshops' %}active{% endif %}" href="{% url 'workshops' %}">Workshops</a>
                 </li>
             </ul>
             </div>
@@ -85,6 +84,7 @@
                     </div>
                 </a>
             </li>
+            {% endwith %}
 </header>
 <div id="delivery-banner" class="row text-center">
     <div class="col bg-black text-white">
