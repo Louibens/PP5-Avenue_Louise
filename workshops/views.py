@@ -4,11 +4,9 @@ from django.views.generic import CreateView, ListView, DetailView
 from django.contrib.auth.decorators import login_required
 from .models import Workshops, WorkshopContact
 from .forms import WorkshopsForm, WorkshopEnquiryForm
-
 from django.contrib.auth.mixins import (
     UserPassesTestMixin, LoginRequiredMixin
 )
-# Create your views here.
 
 
 class WorkshopsView(ListView):

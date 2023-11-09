@@ -10,27 +10,25 @@
     <section class="text-center">
         <h1 class="main-title mx-auto">Discover the magic of making</h1>
         <p class="pt-4">
-            We'd love to see you at one of our upcoming workshops
+            We'd love to see you at one of our upcoming workshops. 
+            <br>
+            We run workshops for adults and kids, beginners and improvers and we'd love to share our passion with you
         </p>
     </section>
     <section>
-        <div class="container d-flex flex-row flex-wrap justify-content-center workshop-cont">
-            {% for workshop in workshops %}
-                <a href="{% url 'workshop_detail' workshop.id %}" class="img-container" aria-label="Click to view {{workshop.name}}">
-                    <div class="card m-3" style="width: 18rem;">
-                        <img class="card-img-top" src="{{workshop.image.url}}" alt="{{workshop.image_alt}}">
-                        <div class="card-body">
-                          <h2 class="card-title">{{workshop.name}}</h2>
-                          <p class="card-text">{{workshop.description|truncatechars:100}}</p>
-                        </div>
-                        <a class="btn btn-black rounded-0 text-uppercase mt-5" href="{% url 'request' %}"> Contact us to book in</a>
-                      </div>
-                      
-                </a>
-                
-            {% endfor %}
-           
-        </div>
+
+      <div class="container d-flex flex-row flex-wrap justify-content-center">
+          {% for workshop in workshops %}
+          <div class="card m-3" style="width: 18rem;">
+            <img class="card-img-top" src="{{workshop.image.url}}" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">{{workshop.name}}</h5>
+              <p class="card-text">{{workshop.description|truncatechars:70}}</p>
+              <a href="{% url 'workshop_detail' workshop.id %}" class="btn btn-primary">Find out more</a>
+            </div>
+          </div>
+          {% endfor %}
+      </div> 
     </section>
 </div>
 {% endblock %}

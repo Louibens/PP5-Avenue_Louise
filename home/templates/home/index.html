@@ -27,7 +27,7 @@
         <div class="container d-flex flex-row flex-wrap justify-content-center">
             {% for product in products %}
             {% if product.in_stock == True %}
-            <div class="card" style="width: 18rem;">
+            <div class="card m-4" style="width: 18rem;">
                 <a href="{% url 'product_detail' product.id %}" class="">
                     <img class="card-img-top" src="{{product.image.url}}" alt="Card image cap">
                     <div class="card-body">

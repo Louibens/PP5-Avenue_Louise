@@ -92,16 +92,39 @@ body {
     cursor: pointer;
 }
 
+.card {
+    width: 18rem;
+    height: 90%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    box-shadow: var(--small-box-shadow);
+    max-height: 700px;
+}
+
+.card-img-top {
+    height: 100%;
+    width: auto;
+}
+
+.workshop-cont {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
 a.img-container {
     position: relative;
     text-align: center;
-    color: var(--white);
+    color: black;
     margin: 2%;
     overflow: hidden;
     text-decoration: none;
     border: 1px solid var(--border);
     box-shadow: var(--small-box-shadow);
-    max-width: 340px;
+    max-height: 340px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -116,6 +139,16 @@ a.img-container:hover {
     width: auto;
     height: 100%;
 }
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 0 1rem 1rem 1rem;
+}
+
+.card-text {
+    margin-bottom: 0.2rem;
+}
+
 
 /* Allauth form formatting */
 
@@ -280,7 +313,6 @@ a.img-container:hover {
 
 /* Mailchimp */
 
-
 #mc_embed_signup {
     background: #fff;
     clear: left;
@@ -415,9 +447,7 @@ footer {
         font-size: 1rem;
     }
 
-    #delivery-banner h4 {
-        font-size: .9rem;
-    }
+   
 
     .btn.btn-outline-black.rounded-0,
     .btn.btn-black.rounded-0 {
