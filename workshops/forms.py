@@ -37,7 +37,7 @@ class WorkshopsForm(forms.ModelForm):
 class WorkshopEnquiryForm(forms.ModelForm):
     class Meta:
         model = WorkshopContact
-        fields = ['name', 'email', 'workshop_enquiry']
+        fields = ['name', 'email', 'workshop', 'workshop_enquiry']
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -50,6 +50,11 @@ class WorkshopEnquiryForm(forms.ModelForm):
         self.fields['email'].widget.attrs.update({
             'class': 'form-control',
             'placeholder': 'Enter your email address'
+        })
+
+        self.fields['workshop'].widget.attrs.update({
+            'class': 'form-control',
+            'placeholder': 'Select a workshop'
         })
 
         self.fields['workshop_enquiry'].widget.attrs.update({

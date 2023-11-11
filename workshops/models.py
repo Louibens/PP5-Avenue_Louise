@@ -32,6 +32,7 @@ class WorkshopContact(models.Model):
 
     name = models.CharField(max_length=100, null=False, blank=False)
     email = models.EmailField(max_length=100, null=False, blank=False)
+    workshop = models.ForeignKey(Workshops, on_delete=models.SET_NULL, null=True, default="")
     workshop_enquiry = models.TextField(max_length=600, default='')
 
     def __str__(self):
