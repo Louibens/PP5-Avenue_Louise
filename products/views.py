@@ -5,6 +5,13 @@ from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import Product, Category
 from .forms import ProductForm
+from django.contrib.messages.views import SuccessMessageMixin
+from django.views.generic.base import TemplateView
+from django.contrib.auth.mixins import (
+    UserPassesTestMixin, LoginRequiredMixin)
+from django.views.generic import (CreateView, ListView, DetailView,
+                                  DeleteView)
+from django.urls import reverse_lazy
 
 
 def all_products(request):
@@ -107,13 +114,21 @@ def edit_product(request, product_id):
 
 @login_required
 def delete_product(request, product_id):
-    """ Delete a product in the store """
+    """ Delete a product from the store """
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only shop owners can do that.')
+        messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
-        
-    product = get_object_or_404(Product, pk=product_id)
-    product.delete()
-    messages.success(request, 'Product deleted')
 
-    return redirect(reverse('products'))
+    product = get_object_or_404(Product, pk=product_id)
+    if request.method == 'POST':
+        product.delete()
+        messages.success(request, 'Product deleted successfully.')
+        return redirect(reverse('products'))
+
+    template = 'products/products_confirm_delete.html'
+    context = {
+        'product': product,
+    }
+    
+    return render(request, template, context)
+
