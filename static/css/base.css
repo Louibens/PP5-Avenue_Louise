@@ -99,7 +99,8 @@ body {
 }
 
 .text-black {
-    color: #000 !important
+    color: #000 !important;
+    text-decoration: none;
 }
 
 .bg-black {
