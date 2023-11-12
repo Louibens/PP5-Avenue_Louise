@@ -39,7 +39,7 @@ body {
 .hero-img {
     height:400px;
     width: 100%;
-    background-image: 'https://avenue-louise.s3.eu-west-1.amazonaws.com/static/images/weaving-xsection.jpg';
+    background: url('/media/weaving-xsection.jpg') no-repeat center center fixed;
     background-size: cover;
     box-shadow: 10px 10px 10px 0 #00000061;
 }
@@ -69,6 +69,14 @@ body {
     transform: translate(-50%, -50%)
 }
 
+.testimonials {
+    width: 80%;
+    border: black 1px solid;
+    border-radius: 10px;
+    background-color: #e8c7c8;
+    left: 50%;
+    transform: translate(-50%, 0%)
+}
 
 .btn-black {
     background: black;
