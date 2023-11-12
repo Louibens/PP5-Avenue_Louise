@@ -35,6 +35,7 @@ class WorkshopsForm(forms.ModelForm):
 
 
 class WorkshopEnquiryForm(forms.ModelForm):
+    """Form for site user to contact the site owner about workshop enquiries"""
     class Meta:
         model = WorkshopContact
         fields = ['name', 'email', 'workshop', 'workshop_enquiry']

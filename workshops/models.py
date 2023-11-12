@@ -4,6 +4,7 @@ from django_resized import ResizedImageField
 # Create your models here.
 
 class Workshops(models.Model):
+    """ Model for workshops"""
     name = models.CharField(max_length=254)
     description = models.TextField()
     price = models.DecimalField(max_digits=6, decimal_places=2)
@@ -11,7 +12,7 @@ class Workshops(models.Model):
     date = models.DateTimeField()
     spaces = models.DecimalField(max_digits=6, decimal_places=2)
     image = ResizedImageField(
-        size=[400, None],
+        size=[200, None],
         quality=75,
         upload_to="workshops/",
         force_format="WEBP",
@@ -28,7 +29,7 @@ class Workshops(models.Model):
 
 
 class WorkshopContact(models.Model):
-    """ Model for Contact """
+    """ Model for contact form about workshops"""
 
     name = models.CharField(max_length=100, null=False, blank=False)
     email = models.EmailField(max_length=100, null=False, blank=False)
