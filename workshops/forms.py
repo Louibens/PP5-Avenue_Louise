@@ -30,7 +30,6 @@ class WorkshopsForm(forms.ModelForm):
             "date": "Workshop Date",
             "space": "Spaces",
             "image": "Workshop Image",
-
         }
 
 

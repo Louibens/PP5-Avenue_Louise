@@ -11,15 +11,7 @@ class Workshops(models.Model):
     location = models.CharField(max_length=254)
     date = models.DateTimeField()
     spaces = models.DecimalField(max_digits=6, decimal_places=2)
-    image = ResizedImageField(
-        size=[200, None],
-        quality=75,
-        upload_to="workshops/",
-        force_format="WEBP",
-        blank=False,
-        null=False,
-        default='No image'
-    )
+    image = models.ImageField(null=True, blank=True)
 
     class Meta:
         ordering = ['date']
