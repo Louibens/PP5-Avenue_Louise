@@ -14,7 +14,7 @@ class Workshops(models.Model):
     image = ResizedImageField(
         size=[None, 400],
         quality=75,
-        upload_to="products/",
+        upload_to="workshops/",
         force_format="WEBP",
         blank=False,
         null=False,
