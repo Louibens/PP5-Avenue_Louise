@@ -168,6 +168,22 @@ a.img-container {
     align-items: center; 
 }
 
+.img-container {
+    position: relative;
+    text-align: center;
+    color: black;
+    margin: 2%;
+    overflow: hidden;
+    text-decoration: none;
+    border: 1px solid var(--border);
+    box-shadow: var(--small-box-shadow);
+    max-height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
 a.img-container:hover {
     color: var(--orange)
 }
