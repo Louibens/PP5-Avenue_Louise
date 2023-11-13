@@ -1,29 +1,26 @@
 {% extends "base.html" %}
 {% load static %}
-
 {% block content %}
 <div class="container">
     <form method="POST" enctype="multipart/form-data" class="p-2 form">
         <h1 class="text-center">Add a Product</h1>
-            <div class="container">
-                <form method="POST" action="{% url 'add_product' %}" class="p-2 form" enctype="multipart/form-data">
-                    {% csrf_token %}
-                    {% for field in form %}
-                        {% if field.name != 'image' %}
-                            {{ field | as_crispy_field }}
-                        {% else %}
-                            {{ field }}
-                        {% endif %}
-                    {% endfor %}
-                    <div class="text-right">
-                        <a class="btn btn-outline-black rounded-0" href="{% url 'products' %}">Cancel</a>
-                        <button class="btn btn-black rounded-0" type="submit">Add Product</button>
-                    </div>
-                </form>
-            </div>
+        <div class="container">
+            <form method="POST" action="{% url 'add_product' %}" class="p-2 form" enctype="multipart/form-data">
+                {% csrf_token %}
+                {% for field in form %}
+                {% if field.name != 'image' %}
+                {{ field | as_crispy_field }}
+                {% else %}
+                {{ field }}
+                {% endif %}
+                {% endfor %}
+                <div class="text-right">
+                    <a class="btn btn-outline-black rounded-0" href="{% url 'products' %}">Cancel</a>
+                    <button class="btn btn-black rounded-0" type="submit">Add Product</button>
+                </div>
+            </form>
         </div>
-
-
+</div>
 {% endblock %}
 
 {% block postloadjs %}
