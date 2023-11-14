@@ -48,28 +48,18 @@ body {
     padding: 20px;
     font-size: 18px;
     background-color: rgba(243, 247, 241, 0.8);
-    margin-left: 5%;
-    margin-top: 5%;
+    margin: 20px 0;
     border-radius: 10px;
     text-align: center;
-    width: 65%;
-    height: 70%;
     box-shadow: 10px -1px 10px 0 #00000061;
 }
 
-.centered {
-    width: 100%;
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%)
-}
 
 .testimonials {
     width: 80%;
     border: black 1px solid;
     border-radius: 10px;
-    background-color: #e8c7c8;
+    background-color: #b9cec1;
     left: 50%;
     transform: translate(-50%, 0%)
 }
@@ -367,7 +357,7 @@ a.img-container:hover {
 /* Mailchimp */
 
 #mc_embed_signup {
-    background: #fff;
+
     clear: left;
     font: 14px Helvetica, Arial, sans-serif;
     width: 300px;
@@ -380,7 +370,7 @@ a.img-container:hover {
 footer {
     background-color: #e8c7c8;
     width: 100%;
-    height: 160px;
+
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
