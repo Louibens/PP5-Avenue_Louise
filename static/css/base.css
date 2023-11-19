@@ -520,9 +520,9 @@ a.img-container:hover {
 
 #mc_embed_signup {
 
-    clear: left;
+    margin: auto auto;
     font: 14px Helvetica, Arial, sans-serif;
-    width: 300px;
+    width: 500px;
 }
 
 
