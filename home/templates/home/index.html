@@ -3,18 +3,79 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
-<div class="container pt-2">
 
-            <h2 class="logo-font text-center ">
+<!-- Welcome/Intro section -->
+<div class="container text-center">
+
+            <!-- <h2 class="logo-font text-center ">
                 Welcome to <strong>Avenue Louise</strong>
-            </h2>
-            <p class="text-center p-2">Passionate about eco-conscious living, I'm on a journey to reimagine the
-                possibilities of everyday objects. My heart beats for textiles, and I'm on a mission to source unwanted
-                fabrics and breathe new life into them, creating unique, sustainable pieces.
-                <br>Weaving has become my meditation, a mindful practice that connects me to the beauty of each thread.
+            </h2> -->
+            <p class="p-2">Avenue Louise is a small Irish business crafting one of a kind pieces full of colour and texture.
+                For us a pesonal comitment to reducing waster in our ways of living has naturally led to a strong focus on sustainability. Avenue Louise
+                works on this throughout the whole process from sourcing materials locally, to using salvaged and reclaimed textiles, and in upcycling loved items.
+                <br> Working in this way adds a certin creative energy that lives in each unique piece. 
+                <hr>Each piece has many stories to tell, why not add to yours?
             </p>
-        <div class="welcome">
-            <div class="text-center">
+    </div>
+
+<!-- Category/Collections cards -->
+<div class="text-center">
+    <h2>Collections</h2>
+</div>
+<div class="container d-flex flex-row flex-wrap justify-content-center p-2">
+    <div class="card m-3" >
+        <img class="card-img-top" src="https://avenue-louise.s3.eu-west-1.amazonaws.com/media/lampshade_card.jpg" alt="Card image cap" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title text-center">Lampshades</h5>
+            <a href="{% url 'products' %}?category=lampshade" class="btn btn-primary">Shop this collection</a>
+        </div>
+    </div>
+    <div class="card m-3">
+        <img class="card-img-top" src="https://avenue-louise.s3.eu-west-1.amazonaws.com/media/wallart_card.jpg" alt="Card image cap" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title text-center">Wall Art</h5>
+            <a href="{% url 'products' %}?category=wall-art" class="btn btn-primary">Shop this collection</a>
+        </div>
+    </div>
+    <div class="card m-3">
+        <img class="card-img-top" src="https://avenue-louise.s3.eu-west-1.amazonaws.com/media/earrings-card.png" alt="Card image cap" style="height: 384px">
+        <div class="card-body">
+            <h5 class="card-title text-center">Earrings</h5>
+            <a href="{% url 'products' %}?category=earrings" class="btn btn-primary">Shop this collection</a>
+        </div>
+    </div>
+</div>
+
+<!-- Workshop cards -->
+<div class="text-center">
+    <h2>Workshops</h2>
+</div>
+<div class="container d-flex flex-row flex-wrap justify-content-center p-2">
+    <div class="card m-3" >
+        <img class="card-img-top" src="https://avenue-louise.s3.eu-west-1.amazonaws.com/media/weaving-card.webp" alt="Card image cap" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title text-center">Weaving</h5>
+            <a href="{% url 'workshops' %}" class="btn btn-primary">View all workshops</a>
+        </div>
+    </div>
+    <div class="card m-3">
+        <img class="card-img-top" src="https://avenue-louise.s3.eu-west-1.amazonaws.com/media/quilting-card.JPG" alt="Card image cap" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title text-center">Patchwork Quilting</h5>
+            <a href="{% url 'workshops' %}" class="btn btn-primary">View all workshops</a>
+        </div>
+    </div>
+    <div class="card m-3">
+        <img class="card-img-top" src="https://avenue-louise.s3.eu-west-1.amazonaws.com/media/macrame_card.jpg" alt="Card image cap" style="width: 18rem;>
+        <div class="card-body">
+            <h5 class="card-title text-center">Macrame</h5>
+            <a href="{% url 'workshops' %}" class="btn btn-primary">View all workshops</a>
+        </div>
+    </div>
+</div>
+
+
+            <!-- <div class="text-center">
                 <h2>New products</h2>
             </div>
             <div class="container d-flex flex-row flex-wrap justify-content-center">
@@ -32,10 +93,10 @@
                 </div>
                 {% endif %}
                 {% endfor %}
-            </div>
-        </div>
-    </div>
+            </div> -->
 
+
+<!-- Testimonials carousel -->
 <section class="testimonial">
 
     <div id="carouselExampleIndicators" class="carousel slide p-4 testimonials" data-ride="carousel">
