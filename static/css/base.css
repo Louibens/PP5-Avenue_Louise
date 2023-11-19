@@ -42,22 +42,6 @@ body {
     transform: scale(1.05);
 }
 
-.heading {
-    text-align: center;
-    color: #454343;
-    font-size: 30px;
-    font-weight: 700;
-    position: relative;
-    margin-bottom: 70px;
-    text-transform: uppercase;
-    z-index: 999;
-}
-
-.heading span {
-    font-size: 18px;
-    display: block;
-    font-weight: 500;
-}
 
 /*-----Testimonial-------*/
 
@@ -77,7 +61,6 @@ body {
 .testimonial {
     min-height: 370px;
     position: relative;
-    background: #white ;
     background-position: center;
     background-size: cover;
     
