@@ -7,28 +7,32 @@
 {% block content %}
 
 <div class="container flex-column pt-3">
-    <section class="text-center">
-        <h1 class="main-title mx-auto">Discover the magic of making</h1>
-        <p class="pt-4">
-            We'd love to see you at one of our upcoming workshops. 
-            <br>
-            We run workshops for adults and kids, beginners and improvers and we'd love to share our passion with you
-        </p>
-    </section>
-    <section>
-
-      <div class="container d-flex flex-row flex-wrap justify-content-center">
-          {% for workshop in workshops %}
-          <div class="card m-3" style="width: 18rem;">
-            <img class="card-img-top img-fluid mb-2" style="width: 18rem; min-height: 360px" src="{{workshop.image.url}}" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title mt-1">{{workshop.name}}</h5>
-              <p class="card-text">{{workshop.description|truncatechars:70}}</p>
-              <a href="{% url 'workshop_detail' workshop.id %}" class="btn btn-black rounded-0 text-uppercase">Find out more</a>
-            </div>
-          </div>
-          {% endfor %}
-      </div> 
-    </section>
+  <section class="text-center">
+    <h1 class="main-title mx-auto">Discover the magic of making</h1>
+    <p class="pt-4">
+      We'd love to see you at one of our upcoming workshops.
+      <br>
+      We run workshops for adults and kids, beginners and improvers and we'd love to share our passion with you
+    </p>
+  </section>
+  <section>
+    <div class="container d-flex flex-row flex-wrap justify-content-center">
+      {% for workshop in workshops %}
+      <div class="card m-3" style="width: 18rem;">
+        <a href="{% url 'workshop_detail' workshop.id %}">
+          <img class="card-img-top img-fluid mb-2" style="width: 18rem; min-height: 360px" src="{{workshop.image.url}}"
+            alt="Card image cap">
+        </a>
+        <div class="card-body">
+          <h5 class="card-title mt-1">{{workshop.name}}</h5>
+          <p class="card-text">{{workshop.description|truncatechars:70}}</p>
+          <a href="{% url 'workshop_detail' workshop.id %}" class="btn btn-black rounded-0 text-uppercase">Find out
+            more</a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
 </div>
+
 {% endblock %}

@@ -6,25 +6,25 @@
 {% block extra_title %} - Workshop Enquiry {% endblock %}
 
 {% block content %}
-    <div class="container auth-container">
-        <div class="row">
-            <div class="col-12 mt-4">
-                <h2 class="mb-4 text-center ">Workshop Enquiry</h2>
-                <hr class="section-rule">
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-12">
-                <form method="POST" class="form mb-2">
-                    {% csrf_token %}
-                    {{ form | crispy }}
-                    <div class="text-right">
-                        <a class="btn btn-outline-black rounded-0 text-uppercase mt-2" href="{% url 'workshops' %}">Cancel</a>
-                        <input class="btn btn-black rounded-0 text-uppercase mt-2" type="submit" value="Submit">
-                    </div>
-                </form>
-            </div>            
+<div class="container auth-container">
+    <div class="row">
+        <div class="col-12 mt-4">
+            <h2 class="mb-4 text-center ">Workshop Enquiry</h2>
+            <hr class="section-rule">
         </div>
     </div>
+    <div class="row">
+        <div class="col-12">
+            <form method="POST" class="form mb-2">
+                {% csrf_token %}
+                {{ form | crispy }}
+                <div class="text-right">
+                    <a class="btn btn-outline-black rounded-0 text-uppercase mt-2"
+                        href="{% url 'workshops' %}">Cancel</a>
+                    <input class="btn btn-black rounded-0 text-uppercase mt-2" type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 {% endblock %}

@@ -7,23 +7,20 @@
     <div class="row">
         <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
             <img src="{{ workshop.image.url }}" alt="{{ workshop.image_alt }}">
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="product-details-container mb-5 mt-md-5">
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="product-details-container mb-5 mt-md-5">
                 <h2 class="text-center">{{ workshop.name }}</h2>
-                <hr>
                 <p>{{workshop.description}}</p>
                 <p><strong>Date: </strong>{{workshop.date}}</p>
                 <p><strong>Location: </strong>{{workshop.location}}</p>
                 <p><strong>Price: </strong>{{workshop.price}}</p>
-
                 {% if request.user.is_superuser %}
-                    <small class="ml-3">
-                        <a href="{% url 'edit_workshop' workshop.id %}">Edit</a> |
-                        <a href="{% url 'delete_workshop' workshop.id %}" class="text-danger">Delete</a>
-                    </small>
+                <small class="ml-3">
+                    <a href="{% url 'edit_workshop' workshop.id %}">Edit</a> |
+                    <a href="{% url 'delete_workshop' workshop.id %}" class="text-danger">Delete</a>
+                </small>
                 {% endif %}
-
                 <div class="col{% if s %}-12 mt-2{% endif %}">
                     <a href="{% url 'workshops' %}" class="btn btn-outline-black rounded-0 mt-5">
                         <span class="icon">
@@ -31,10 +28,10 @@
                         </span>
                         <span class="text-uppercase">Keep Shopping</span>
                     </a>
-                    <a class="btn btn-black rounded-0 text-uppercase mt-5" href="{% url 'request' %}"> Contact us to book in</a>
+                    <a class="btn btn-black rounded-0 text-uppercase mt-5" href="{% url 'request' %}"> Contact us to
+                        book in</a>
                 </div>
-                <input type="hidden" name="redirect_url" value="{{ request.path }}"> 
-                
+                <input type="hidden" name="redirect_url" value="{{ request.path }}">
             </div>
         </div>
     </div>
