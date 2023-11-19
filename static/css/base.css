@@ -20,7 +20,6 @@ body {
     width: 1.5rem;
 }
 
-
 .navbar {    
     background-color: #e8c7c8 !important
 }
@@ -224,7 +223,7 @@ body {
     width: 35px;
     height: 35px;
 }
-/* ------testimonial  close-------*/
+
 
 .btn-black {
     background: black;
@@ -409,7 +408,7 @@ a.img-container:hover {
 	color: #17a2b8; /* text-info */
 }
 
-/* ------------------------------- bootstrap toasts */
+/* -------bootstrap toasts------- */
 
 .message-container {
     position: fixed;
@@ -477,7 +476,7 @@ a.img-container:hover {
     overflow-y: auto;
 }
 
-/* Workshops */
+/* -------Workshops------- */
 
 .workshop-info {
     display: flex;
@@ -516,23 +515,20 @@ a.img-container:hover {
     flex-wrap: wrap;
 }
 
-/* Mailchimp */
+/* -------Mailchimp------- */
 
 #mc_embed_signup {
 
     margin: auto auto;
     font: 14px Helvetica, Arial, sans-serif;
-    width: 500px;
+    width: 60%;
 }
 
-
-
-/* Footer */
+/* -------Footer------- */
 
 footer {
     background-color: #e8c7c8;
     width: 100%;
-
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -541,35 +537,6 @@ footer {
     color: black;
     bottom: 0;
     font-size: 14px;
-}
-
-.social-networks {
-    width:50%; 
-    text-align: center;
-    align-items: center;
-}
-
-.social-networks h3 {
-    padding-top: 10px;
-}
-
-.social-networks ul {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 0 !important;
-}
-
-.social-networks li {
-    display: inline;
-    text-align: center;
-    font-size: 160%;
-    margin: 1%;
-    text-decoration: none;
-}
-
-.social-networks li a {
-    text-decoration: none;
-    color: black
 }
 
 .disclaimer {
@@ -581,8 +548,7 @@ footer {
     color: black
 }
 
-
-/* Product Form */
+/* -------Product Form------- */
 
 .btn-file {
     position: relative;
@@ -651,8 +617,6 @@ footer {
         padding: .6rem .6rem;
         font-size: 1rem;
     }
-
-   
 
     .btn.btn-outline-black.rounded-0,
     .btn.btn-black.rounded-0 {
