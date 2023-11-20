@@ -11,7 +11,6 @@ from django.contrib.auth.mixins import (
     UserPassesTestMixin, LoginRequiredMixin)
 from django.views.generic import (CreateView, ListView, DetailView,
                                   DeleteView)
-from django.urls import reverse_lazy
 
 
 def all_products(request):

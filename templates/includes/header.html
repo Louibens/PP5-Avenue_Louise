@@ -38,6 +38,12 @@
                 <li class="nav-item ">
                     <a class="nav-link {% if url_name == 'workshops' %}active{% endif %}" href="{% url 'workshops' %}">Workshops</a>
                 </li>
+                <li class="nav-item ">
+                    <a class="nav-link {% if url_name == 'contactus' %}active{% endif %}" href="{% url 'contactus' %}">Contact Us</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link {% if url_name == 'aboutus' %}active{% endif %}" href="{% url 'aboutus' %}">About Us</a>
+                </li>
             </ul>
             </div>
 
@@ -67,8 +73,9 @@
                 <div class="dropdown-menu border-0" aria-labelledby="user-options">
                     {% if request.user.is_authenticated %}
                     {% if request.user.is_superuser %}
-                    <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
-                    <a href="{% url 'add_workshop' %}" class="dropdown-item">Workshop Management</a>
+                    <a href="{% url 'add_product' %}" class="dropdown-item">Add a Product</a>
+                    <a href="{% url 'add_workshop' %}" class="dropdown-item">Add a Workshop</a>
+                    <a href="{% url 'add_testimonial' %}" class="dropdown-item">Add a Testimonial</a>
                     {% endif %}
                     <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
                     <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>

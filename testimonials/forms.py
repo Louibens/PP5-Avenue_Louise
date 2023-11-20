@@ -1,5 +1,4 @@
 from django import forms
-
 from .models import Testimonial
 
 
@@ -14,3 +13,5 @@ class testimonialForm(forms.ModelForm):
         model = Testimonial
         fields = ('client_name', 'client_testimonial',
                   'image')
+
+

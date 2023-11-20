@@ -3,12 +3,12 @@
 
 {% block content %}
 <div class="container">
-    <h1 class="text-center mt-2">Confirm deletion</h1>
+    <h1 class="text-center my-5">Confirm deletion</h1>
     <div class="d-flex justify-content-center pt-3">
         <form method="POST" class="form mb-2" enctype="multipart/form-data">
             {% csrf_token %}
             <p>Are you sure you want to delete "{{workshop.name}}"?</p>
-            <div class="text-center">
+            <div class="text-center my-5">
                 <a class="btn btn-outline-black rounded-0" href="{% url 'workshop_detail' workshop.id %}">Cancel</a>
                 <button class="btn btn-black rounded-0" type="submit">Delete Workshop</button>
             </div>

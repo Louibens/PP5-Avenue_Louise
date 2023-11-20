@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Add Testimonial{% endblock %}
+
+{% block content %}
+<div class="container">
+    <form method="POST" enctype="multipart/form-data" class="p-2 form">
+        <h1 class="text-center">Add Testimonial</h1>
+        {% csrf_token %}
+        {{ form.media }}
+        {{ form|crispy }}
+        <div class="text-right">
+            <a class="btn btn-outline-black rounded-0" href="{% url 'home' %}">Cancel</a>
+            <button class="btn btn-black rounded-0" type="submit">Add Testimonial</button>
+        </div>
+    </form>
+</div>
+{% endblock %}
