@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+
+<!-- Contact Us Form Success Page -->
+
+{% block extra_title %} - Contact Us{% endblock %}
+
+{% block content %}
+<div class="container auth-container">
+    <div class="row">
+        <div class="col-12 mt-4">
+            <h2 class="mb-4 text-center ">Success!</h2>
+            <hr class="section-rule">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 text-center">
+            <h3>Your Message Has Been received!</h3>
+            <h4>We will be in contact shortly</h4>
+        </div>
+        <div class="col-12 text-center mt-5">
+            <a class="btn btn-black rounded-0 text-uppercase mt-2" href="{% url 'home' %}">Return to Homepage</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

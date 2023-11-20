@@ -24,10 +24,26 @@ def AboutUs(request):
         if form.is_valid():
             contact_request = form.save(commit=False)
             contact_request.save()
-            return render(request, 'home/about_us.html', context)
+            return render(request, 'home/about_us.html')
     else:
         if request.user.is_authenticated:
             form = ContactUsForm(initial={'email': request.user.email})
         else:
             form = ContactUsForm()
-    return render(request, 'home/about_us.html', {'form': form})
+    context['form'] = form
+    return render(request, 'home/about_us.html', context)
+
+
+def ContactUs(request):
+    if request.method == 'POST':
+        form = ContactUsForm(request.POST)
+        if form.is_valid():
+            contact_request = form.save(commit=False)
+            contact_request.save()
+            return render(request, 'home/contact_us_request_success.html')
+    else:
+        if request.user.is_authenticated:
+            form = ContactUsForm(initial={'email': request.user.email})
+        else:
+            form = ContactUsForm()
+    return render(request, 'home/contact_us.html', {'form': form})
