@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<!-- Category/Collections cards -->
+<div class="text-center mt-3">
+    <h2>About Us</h2>
+</div>
+
+<div class="container text-center mt-3">
+    <p> Passionate about eco-conscious living, I'm on a journey to reimagine the possibilities of everyday objects. My heart beats for textiles, and I'm on a mission to source unwanted fabrics and breathe new life into them, creating unique, sustainable pieces. 
+        <hr>Weaving has become my meditation, a mindful practice that connects me to the beauty of each thread.<hr>
+
+        But my passion doesn't end there. I dream of teaching future generations the art of crafting, not just for aesthetics but with a deep consideration 
+        for our planet's impact. I want to empower them to create beautiful pieces that stand the test of time and inspire them to repair, not replace, so that 
+        together, we can weave a more sustainable future<hr>
+    </p>
+</div>
+
+<div class="text-center mt-3">
+    <h2>Get In Touch</h2>
+</div>
+<div class="container text-center mt-3">
+    <p> We would love to hear from you if you are interested in commissioning a piece or would like to find out more about our products and workshops.<hr>
+    </p>
+    <!-- <div class="container auth-container">
+        <div class="row">
+            <div class="col-12 mt-4">
+                <h2 class="mb-4 text-center ">Workshop Enquiry</h2>
+                <hr class="section-rule">
+            </div>
+        </div> -->
+        <div class="row">
+            <div class="col-12">
+                <form method="POST" class="form mb-2">
+                    {% csrf_token %}
+                    {{ form | crispy }}
+                    <div class="text-right">
+                        <a class="btn btn-outline-black rounded-0 text-uppercase mt-2"
+                            href="{% url 'aboutus' %}">Cancel</a>
+                        <input class="btn btn-black rounded-0 text-uppercase mt-2" type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Testimonials carousel -->
+<div class="text-center">
+    <h2>Testimonials</h2>
+</div>
+<section class="testimonial text-center">
+    <div class="container">
+
+        <div id="testimonial4" class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x" data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
+            <div class="carousel-inner" role="listbox">
+                {% for testimonial in testimonials %}
+                <div class="carousel-item {% if forloop.counter == 1 %}active{% endif %}">
+                    <div class="testimonial4_slide">
+                        <img src="{{testimonial.image.url}}" class="img-circle img-responsive" />
+                        <p>"{{testimonial.client_testimonial}}"</p>
+                        <h4><strong>{{testimonial.client_name}}</strong></h4>
+                    </div>
+                </div>
+                {% endfor %}
+                </div>
+            <a class="carousel-control-prev" href="#testimonial4" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#testimonial4" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
