@@ -1,11 +1,13 @@
 {% load static %}
 
 <header>
+    <!-- Free Delivery banner -->
     <div class="row text-center">
         <div class="col bg-black text-white">
             <h4 class="logo-font my-1">Free delivery on orders over €{{ free_delivery_threshold }}!</h4>
         </div>
     </div>
+    <!-- Logo -->
     {% with request.resolver_match.url_name as url_name %}
     <nav class="container-fluid navbar navbar-expand-lg navbar-light">
         <div class="col text-center text-lg-left p-0">
@@ -13,12 +15,12 @@
                 <img src="https://avenue-louise.s3.eu-west-1.amazonaws.com/media/logo-nobackground-200.png" alt="Avenue Louise logo" class="logo">
             </a>
         </div>
-
+    <!-- Navigation -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="text-lg-right collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="text-right collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
                     <a class="nav-link {% if url_name == 'home' %}active{% endif %}" href="{% url 'home' %}">Home</a>
@@ -28,7 +30,7 @@
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Shop
                     </a>
-                    <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                    <div class="dropdown-menu border-0 text-right p-3" aria-labelledby="user-options">
                         <a class="nav-link" href="{% url 'products' %}">All Products</a>
                         <a class="nav-link" href="{% url 'products' %}?category=wall-art">Wall Art</a>
                         <a class="nav-link" href="{% url 'products' %}?category=lampshade">Lampshades</a>
@@ -46,7 +48,7 @@
                 </li>
             </ul>
             </div>
-
+    <!-- Search box -->
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <form method="GET" action="{% url 'products' %}">
                     <div class="input-group w-100">
@@ -62,8 +64,7 @@
                     </div>
                 </form>
             </div>
-
-        
+    <!-- My Account menu -->
             <li class="nav-link dropdown">
                 <a class="nav-link dropdown-toggle text-black" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
@@ -85,6 +86,7 @@
                     {% endif %}
                 </div>
             </li>
+    <!-- Shopping bag icon and price display -->
             <li class="nav-link">
                 <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
                     href="{% url 'view_bag' %}">
@@ -102,7 +104,4 @@
             </li>
             {% endwith %}
             </nav>
-
 </header>
-
-
