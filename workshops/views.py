@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.views.generic import CreateView, ListView, DetailView
+from django.contrib.messages.views import SuccessMessageMixin
 from django.contrib.auth.decorators import login_required
 from .models import Workshops, WorkshopContact
 from .forms import WorkshopsForm, WorkshopEnquiryForm
@@ -25,13 +26,14 @@ class WorkshopDetail(DetailView):
     context_object_name = "workshop"
 
 
-class AddWorkshop(LoginRequiredMixin, CreateView):
+class AddWorkshop(LoginRequiredMixin, SuccessMessageMixin, CreateView):
     """Add workshop view"""
 
     template_name = "workshops/add_workshop.html"
     model = Workshops
     form_class = WorkshopsForm
     success_url = "/workshops/"
+    success_message = 'Successfully added workshop!'
 
     def form_valid(self, form):
         form.instance.user = self.request.user
