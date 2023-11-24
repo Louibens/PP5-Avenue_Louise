@@ -20,6 +20,10 @@ body {
     width: 1.5rem;
 }
 
+.delivery {
+    margin: 0 !important
+}
+
 .navbar {    
     background-color: #e8c7c8 !important
 }
@@ -643,4 +647,8 @@ footer {
     .logo-font {
         font-size: 20px;
     }
+
+    .testimonial {
+        min-height: auto;
+}
 }

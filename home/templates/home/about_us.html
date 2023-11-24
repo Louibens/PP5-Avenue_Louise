@@ -3,12 +3,12 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
-<div class="d-flex flex-row m-3">
+<div class="d-flex flex-column flex-md-row">
     <!-- About Us Section -->
 
 
-    <div class="container text-center mx-5">
-        <div class="text-center">
+    <div class="col text-center">
+        <div class="text-center pt-3">
             <h2>About Us</h2>
             <hr>
         </div>
@@ -29,10 +29,10 @@
         </p>
     </div>
     <!-- Testimonials carousel -->
-    <div class="container text-center testimonial">
+    <div class="col text-center testimonial pt-3">
         <h2>Testimonials</h2>
-        <p> See what our customers have to say about us.</p>
         <hr>
+        <p> See what our customers have to say about us.</p>
         <div id="testimonial4"
             class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x"
             data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
