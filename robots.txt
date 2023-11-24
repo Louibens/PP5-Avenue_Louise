@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /bag/
+Disallow: /checkout/
+Disallow: /profiles/
+Sitemap: https://avenue-louise-d68884ca43c9.herokuapp.com/sitemap.xml
