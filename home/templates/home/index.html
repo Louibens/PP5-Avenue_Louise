@@ -10,7 +10,7 @@
 <div class="container d-flex flex-row flex-wrap justify-content-center p-2">
     <div class="card m-3">
         <img class="card-img-top" src="https://avenue-louise.s3.eu-west-1.amazonaws.com/media/lampshade_card.webp"
-            alt="Card image cap" style="width: 18rem; min-height: 384px">
+            alt="Card image cap">
         <div class="card-body">
             <h5 class="card-title text-center mt-2">Lampshades</h5>
             <a href="{% url 'products' %}?category=lampshade" class="btn btn-black rounded-0">Shop this collection</a>
@@ -18,7 +18,7 @@
     </div>
     <div class="card m-3">
         <img class="card-img-top" src="https://avenue-louise.s3.eu-west-1.amazonaws.com/media/wallart_card.webp"
-            alt="Card image cap" style="width: 18rem; min-height: 384px">
+            alt="Card image cap">
         <div class="card-body">
             <h5 class="card-title text-center mt-2">Wall Art</h5>
             <a href="{% url 'products' %}?category=wall-art" class="btn btn-black rounded-0">Shop this collection</a>
@@ -26,7 +26,7 @@
     </div>
     <div class="card m-3">
         <img class="card-img-top" src="https://avenue-louise.s3.eu-west-1.amazonaws.com/media/earrings-card.webp"
-            alt="Card image cap" style="min-height: 384px">
+            alt="Card image cap">
         <div class="card-body">
             <h5 class="card-title text-center mt-2">Earrings</h5>
             <a href="{% url 'products' %}?category=earrings" class="btn btn-black rounded-0">Shop this collection</a>
@@ -80,7 +80,6 @@
 </div>
 <section class="testimonial text-center">
     <div class="container">
-
         <div id="testimonial4" class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x" data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
             <div class="carousel-inner" role="listbox">
                 {% for testimonial in testimonials %}
