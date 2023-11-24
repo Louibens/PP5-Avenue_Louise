@@ -23,7 +23,7 @@
                                 <th scope="col"></th>
                                 <th scope="col">Price</th>
                                 <th scope="col">Qty</th>
-                                <th scope="col"></th>
+                                <!-- <th scope="col"></th> -->
                                 <th scope="col">Subtotal</th>
                             </tr>
                         </thead>
@@ -41,30 +41,35 @@
                                     <p class="my-0"><strong>{{ item.product.name }}</strong></p>
                                 </td>
                                 <td class="py-3">
-                                    <p class="my-0">${{ item.product.price }}</p>
+                                    <p class="my-0">€{{ item.product.price }}</p>
                                 </td>
                                 <td class="py-3 w-20">
                                     <p class="my-0">{{ item.quantity }}</p>
                                 </td>
-                                <td class="py-3 w-20">
+                                <!-- <td class="py-3 w-20">
                                     <form class="form update-form" method="POST" action="{% url 'remove_from_bag' item.item_id %}">
                                         {% csrf_token %}
                                     <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}"><small>Remove item</small></a>
                                 </form>
-                                </td>
+                                </td> -->
                                 <td class="py-3">
-                                    <p class="my-0">${{ item.product.price }}</p>
+                                    <p class="my-0">€{{ item.product.price }}</p>
+                                    <form class="form update-form" method="POST" action="{% url 'remove_from_bag' item.item_id %}">
+                                        {% csrf_token %}
+                                        <a class="remove-item text-danger float-left" id="remove_{{ item.item_id }}"><small>Remove item</small></a>
+                                    </form>
                                 </td>
                             </tr>
+                            
                         {% endfor %}
                         <tr>
                             <td colspan="5" class="pt-5 text-right">
                                 <h6><strong>Bag Total: ${{ total|floatformat:2 }}</strong></h6>
-                                <h6>Delivery: ${{ delivery|floatformat:2 }}</h6>
-                                <h4 class="mt-4"><strong>Grand Total: ${{ grand_total|floatformat:2 }}</strong></h4>
+                                <h6>Delivery: €{{ delivery|floatformat:2 }}</h6>
+                                <h4 class="mt-4"><strong>Grand Total: €{{ grand_total|floatformat:2 }}</strong></h4>
                                 {% if free_delivery_delta > 0 %}
                                 <p class="mb-q text-danger">
-                                    You could get free delivery by spending just <strong>${{ free_delivery_delta }}</strong> more!
+                                    You could get free delivery by spending just <strong>€{{ free_delivery_delta }}</strong> more!
                                 </p>
                                 {% endif %}
                             </td>
