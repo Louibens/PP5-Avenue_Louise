@@ -5,7 +5,6 @@
 
 
 {% block content %}
-
 <div class="container flex-column pt-3">
   <section class="text-center">
     <h1 class="main-title mx-auto">Discover the magic of making</h1>
@@ -34,5 +33,18 @@
     </div>
   </section>
 </div>
+<div class="btt-button shadow-sm rounded-0 border border-black">
+  <a class="btt-link d-flex h-100">
+    <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
+  </a>
+</div>
+{% endblock %}
 
+{% block postloadjs %}
+{{ block.super }}
+<script type="text/javascript">
+  $('.btt-link').click(function (e) {
+    window.scrollTo(0, 0)
+  })
+</script>
 {% endblock %}

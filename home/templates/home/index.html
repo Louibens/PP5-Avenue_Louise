@@ -36,7 +36,7 @@
 <!-- Welcome/Intro section -->
 <div class="container text-center">
     <p class="p-2">Avenue Louise is a small Irish business crafting one of a kind pieces full of colour and texture.
-        For us a pesonal comitment to reducing waster in our ways of living has naturally led to a strong focus on
+        For us a pesonal comitment to reducing waste in our ways of living has naturally led to a strong focus on
         sustainability. Avenue Louise
         works on this throughout the whole process from sourcing materials locally, to using salvaged and reclaimed
         textiles, and in upcycling loved items.
@@ -74,7 +74,6 @@
     </div>
 </div>
 </div>
-
 <!-- Testimonials carousel -->
 <div class="text-center">
     <h2>Testimonials</h2>
@@ -103,5 +102,19 @@
         </div>
     </div>
 </section>
-
+<div class="btt-button shadow-sm rounded-0 border border-black">
+    <a class="btt-link d-flex h-100">
+        <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
+    </a>
+</div>
 {% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+<script type="text/javascript">
+    $('.btt-link').click(function (e) {
+    window.scrollTo(0, 0)
+    })
+</script>
+{% endblock %}
+  
