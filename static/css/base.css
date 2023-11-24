@@ -45,7 +45,6 @@ body {
     transform: scale(1.05);
 }
 
-
 /*-----Testimonial-------*/
 
 .testimonial:after {
@@ -53,7 +52,6 @@ body {
     top: -0 !important;
     left: 0;
     content: " ";
-
     background-size: 100% 100px;
     width: 100%;
     height: 100px;
@@ -65,17 +63,19 @@ body {
     min-height: 450px;
     position: relative;
     background-position: center;
-    background-size: cover;
-    
+    background-size: cover; 
 }
+/*----- Below testimonial css adapted from https://codepen.io/baahubali92/pen/BvdmLo -------*/
 #testimonial4 .carousel-inner:hover{
   cursor: -moz-grab;
   cursor: -webkit-grab;
 }
+
 #testimonial4 .carousel-inner:active{
   cursor: -moz-grabbing;
   cursor: -webkit-grabbing;
 }
+
 #testimonial4 .carousel-inner .item{
   overflow: hidden;
 }
@@ -94,6 +94,7 @@ body {
   text-align: center;
   white-space: nowrap;
 }
+
 .testimonial4_indicators .carousel-indicators li{
   padding: 0;
   width: 14px;
@@ -107,6 +108,7 @@ body {
   -webkit-border-radius: 100%;
   border-radius: 100%;
 }
+
 .testimonial4_indicators .carousel-indicators .active{
   padding: 0;
   width: 14px;
@@ -117,9 +119,11 @@ body {
   -webkit-border-radius: 100%;
   border-radius: 100%;
 }
+
 .testimonial4_indicators .carousel-indicators::-webkit-scrollbar{
   height: 3px;
 }
+
 .testimonial4_indicators .carousel-indicators::-webkit-scrollbar-thumb{
   background: #eeeeee;
   -webkit-border-radius: 0;
@@ -149,16 +153,19 @@ body {
   -webkit-transition: all 0.6s cubic-bezier(0.3,1,0,1);
   transition: all 0.6s cubic-bezier(0.3,1,0,1);
 }
+
 .testimonial4_control_button .carousel-control.left{
   left: 7%;
   top: 50%;
   right: auto;
 }
+
 .testimonial4_control_button .carousel-control.right{
   right: 7%;
   top: 50%;
   left: auto;
 }
+
 .testimonial4_control_button .carousel-control.left:hover,
 .testimonial4_control_button .carousel-control.right:hover{
   color: #000;
@@ -176,6 +183,7 @@ body {
   text-align: center;
   position: relative;
 }
+
 .testimonial4_header h4{
   color: #ffffff;
   font-weight: 600;
@@ -195,12 +203,13 @@ body {
   position: relative;
   text-align: center;
 }
+
 .testimonial4_slide img {
     top: 0;
     left: 0;
     right: 0;
-    width: 136px;
-    height: 136px;
+    width: 150px;
+    height: 150px;
     margin: auto;
     display: block;
     color: #f2f2f2;
@@ -208,11 +217,8 @@ body {
     text-align: center;
     position: relative;
     border-radius: 50%;
-    box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
-    -moz-box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
-    -o-box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
-    -webkit-box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
 }
+
 .testimonial4_slide p {
     color: black;
     line-height: 1.4;
@@ -227,7 +233,6 @@ body {
     width: 35px;
     height: 35px;
 }
-
 
 .btn-black {
     background: black;
@@ -299,6 +304,7 @@ body {
 .card-img-top {
     height: 100%;
     width: auto;
+    border-radius: 10px;
 }
 
 .workshop-cont {
@@ -314,8 +320,6 @@ a.img-container {
     margin: 2%;
     overflow: hidden;
     text-decoration: none;
-    border: 1px solid var(--border);
-    box-shadow: var(--small-box-shadow);
     max-height: 340px;
     display: flex;
     flex-direction: column;
@@ -330,17 +334,11 @@ a.img-container {
     margin: 2%;
     overflow: hidden;
     text-decoration: none;
-    border: 1px solid var(--border);
-    box-shadow: var(--small-box-shadow);
     max-height: 340px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; 
-}
-
-a.img-container:hover {
-    color: var(--orange)
 }
 
 .img-container img {
