@@ -15,7 +15,6 @@ from django.views.generic import (CreateView, ListView, DetailView,
 
 def all_products(request):
     """ A view to show all products, includng sorting and search queries """
-
     products = Product.objects.all()
     query = None
     categories = None
@@ -39,7 +38,6 @@ def all_products(request):
         'search_term': query,
         'current_categories': categories,
     }
-
     return render(request, 'products/products.html', context)
 
 
@@ -47,11 +45,9 @@ def product_detail(request, product_id):
     """ A view to show a product details """
 
     product = get_object_or_404(Product, pk=product_id)
-
     context = {
         'product': product,
     }
-
     return render(request, 'products/product_detail.html', context)
 
 
@@ -78,7 +74,6 @@ def add_product(request):
     context = {
         'form': form,
     }
-
     return render(request, template, context)
 
 
@@ -107,7 +102,6 @@ def edit_product(request, product_id):
         'form': form,
         'product': product,
     }
-
     return render(request, template, context)
 
 
@@ -128,5 +122,4 @@ def delete_product(request, product_id):
     context = {
         'product': product,
     }
-    
     return render(request, template, context)

@@ -239,6 +239,7 @@ body {
     color: white;
 }
 
+/*----- Buttons ------*/
 .btn-outline-black {
     background: white;
     color: black !important; /* use important to override link colors for <a> elements */
@@ -260,19 +261,6 @@ body {
 .btn-black:focus {
     background: #222;
     color: white;
-}
-
-.text-black {
-    color: #000 !important;
-    text-decoration: none;
-}
-
-.bg-black {
-    background: #000 !important;
-}
-
-.product-container {
-    padding-top: 50px;
 }
 
 .btt-button {
@@ -355,6 +343,18 @@ a.img-container {
     margin-bottom: 0.2rem;
 }
 
+.text-black {
+    color: #000 !important;
+    text-decoration: none;
+}
+
+.bg-black {
+    background: #000 !important;
+}
+
+.product-container {
+    padding-top: 50px;
+}
 
 /* Allauth form formatting */
 
@@ -635,9 +635,7 @@ footer {
     }
 
     .welcome {
-
         font-size: 14px;
-
         width: 80%;
         height: 80%;
     }
@@ -648,5 +646,5 @@ footer {
 
     .testimonial {
         min-height: auto;
-}
+    }
 }

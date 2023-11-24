@@ -1,10 +1,9 @@
 from django.db import models
 from django_resized import ResizedImageField
 
-# Create your models here.
-
 
 class Category(models.Model):
+    """ Model for categories """
     name = models.CharField(max_length=254)
     friendly_name = models.CharField(max_length=254, null=True, blank=True)
 
@@ -16,6 +15,7 @@ class Category(models.Model):
 
 
 class Product(models.Model):
+    """ Model for products """
     category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
     sku = models.CharField(max_length=254, null=True, blank=True)
     name = models.CharField(max_length=254)

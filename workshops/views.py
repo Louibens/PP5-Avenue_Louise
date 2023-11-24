@@ -20,7 +20,6 @@ class WorkshopsView(ListView):
 
 class WorkshopDetail(DetailView):
     """View as a single workshop"""
-
     template_name = "workshops/workshop_detail.html"
     model = Workshops
     context_object_name = "workshop"
@@ -28,7 +27,6 @@ class WorkshopDetail(DetailView):
 
 class AddWorkshop(LoginRequiredMixin, SuccessMessageMixin, CreateView):
     """Add workshop view"""
-
     template_name = "workshops/add_workshop.html"
     model = Workshops
     form_class = WorkshopsForm
@@ -65,7 +63,6 @@ def edit_workshop(request, workshop_id):
         'form': form,
         'workshop': workshop,
     }
-
     return render(request, template, context)
 
 
@@ -86,7 +83,6 @@ def delete_workshop(request, workshop_id):
     context = {
         'workshop': workshop,
     }
-    
     return render(request, template, context)
 
 

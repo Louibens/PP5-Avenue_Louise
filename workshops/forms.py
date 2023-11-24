@@ -5,7 +5,6 @@ import textwrap
 
 class WorkshopsForm(forms.ModelForm):
     """Form to create a workshop"""
-
     class Meta:
         model = Workshops
         fields = [

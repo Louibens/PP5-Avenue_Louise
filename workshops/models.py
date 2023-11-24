@@ -1,7 +1,6 @@
 from django.db import models
 from django_resized import ResizedImageField
 
-# Create your models here.
 
 class Workshops(models.Model):
     """ Model for workshops"""
@@ -29,7 +28,6 @@ class Workshops(models.Model):
 
 class WorkshopContact(models.Model):
     """ Model for contact form about workshops"""
-
     name = models.CharField(max_length=100, null=False, blank=False)
     email = models.EmailField(max_length=100, null=False, blank=False)
     workshop = models.ForeignKey(Workshops, on_delete=models.SET_NULL, null=True, default="")

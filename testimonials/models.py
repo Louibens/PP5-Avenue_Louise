@@ -1,7 +1,6 @@
 from django.db import models
 from django_resized import ResizedImageField
 
-# Create your models here.
 
 class Testimonial(models.Model):
     """
