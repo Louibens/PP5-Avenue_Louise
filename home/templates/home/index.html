@@ -9,24 +9,30 @@
 </div>
 <div class="container d-flex flex-row flex-wrap justify-content-center p-2">
     <div class="card m-3">
-        <img class="card-img-top" src="https://avenue-louise.s3.eu-west-1.amazonaws.com/media/lampshade_card.webp"
+        <a href="{% url 'products' %}?category=lampshade">
+            <img class="card-img-top" src="https://avenue-louise.s3.eu-west-1.amazonaws.com/media/lampshade_card.webp"
             alt="Card image cap">
+        </a>
         <div class="card-body">
             <h5 class="card-title text-center mt-2">Lampshades</h5>
             <a href="{% url 'products' %}?category=lampshade" class="btn btn-black rounded-0">Shop this collection</a>
         </div>
     </div>
     <div class="card m-3">
-        <img class="card-img-top" src="https://avenue-louise.s3.eu-west-1.amazonaws.com/media/wallart_card.webp"
+        <a href="{% url 'products' %}?category=wall-art">
+            <img class="card-img-top" src="https://avenue-louise.s3.eu-west-1.amazonaws.com/media/wallart_card.webp"
             alt="Card image cap">
+        </a>
         <div class="card-body">
             <h5 class="card-title text-center mt-2">Wall Art</h5>
             <a href="{% url 'products' %}?category=wall-art" class="btn btn-black rounded-0">Shop this collection</a>
         </div>
     </div>
     <div class="card m-3">
-        <img class="card-img-top" src="https://avenue-louise.s3.eu-west-1.amazonaws.com/media/earrings-card.webp"
+        <a href="{% url 'products' %}?category=earrings">
+            <img class="card-img-top" src="https://avenue-louise.s3.eu-west-1.amazonaws.com/media/earrings.webp"
             alt="Card image cap">
+        </a>
         <div class="card-body">
             <h5 class="card-title text-center mt-2">Earrings</h5>
             <a href="{% url 'products' %}?category=earrings" class="btn btn-black rounded-0">Shop this collection</a>
@@ -50,24 +56,30 @@
 </div>
 <div class="container d-flex flex-row flex-wrap justify-content-center p-2">
     <div class="card m-3">
-        <img class="card-img-top" src="https://avenue-louise.s3.eu-west-1.amazonaws.com/media/weaving-card.webp"
-            alt="Card image cap" style="width: 18rem; min-height: 384px">
+        <a href="{% url 'workshops' %}">
+            <img class="card-img-top" src="https://avenue-louise.s3.eu-west-1.amazonaws.com/media/weaving-card.webp"
+            alt="Card image cap">
+        </a>
         <div class="card-body">
             <h5 class="card-title text-center mt-2">Weaving</h5>
             <a href="{% url 'workshops' %}" class="btn btn-black rounded-0">View all workshops</a>
         </div>
     </div>
     <div class="card m-3">
-        <img class="card-img-top" src="https://avenue-louise.s3.eu-west-1.amazonaws.com/media/quilting-card.webp"
-            alt="Card image cap" style="width: 18rem; min-height: 384px">
+        <a href="{% url 'workshops' %}">
+            <img class="card-img-top" src="https://avenue-louise.s3.eu-west-1.amazonaws.com/media/quilting-card.webp"
+            alt="Card image cap">
+        </a>
         <div class="card-body">
             <h5 class="card-title text-center mt-2">Patchwork Quilting</h5>
             <a href="{% url 'workshops' %}" class="btn btn-black rounded-0">View all workshops</a>
         </div>
     </div>
     <div class="card m-3">
-        <img class="card-img-top" src="https://avenue-louise.s3.eu-west-1.amazonaws.com/media/workshops/macrame_card.webp"
-            alt="Card image cap" style="width: 18rem; min-height: 384px">
+        <a href="{% url 'workshops' %}">
+            <img class="card-img-top" src="https://avenue-louise.s3.eu-west-1.amazonaws.com/media/workshops/macrame_card.webp"
+            alt="Card image cap">
+        </a>
         <div class=" card-body">
         <h5 class="card-title text-center mt-2">Macrame</h5>
         <a href="{% url 'workshops' %}" class="btn btn-black rounded-0">View all workshops</a>

@@ -36,8 +36,7 @@ body {
 }
 
 .card-img-top {
-    height: 100%;
-    max-height: 384px;
+    height: 388px;
     width: auto;
     border-radius: 10px;
 }
@@ -534,6 +533,7 @@ footer {
     color: black;
     bottom: 0;
     font-size: 14px;
+    bottom: 0;
 }
 
 .disclaimer {
