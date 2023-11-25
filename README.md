@@ -187,6 +187,18 @@ The Avenue Louise website is based on the Code Institute Boutique Ado walkthroug
 
 ![Items](documentation/images/)
 
+-   ### F15 Newsletter
+
+    - As part of the web marketing strategy, the site utilises the email subscription services managed by MailChimp.
+    - The newsletter sign up form is located in the footer
+
+![Items](documentation/images/)
+
+-   ### F15 Privacy Policy
+
+    - In line with GDPR requirements, there is a link to the Privacy Policy located at the bottom of the footer and opens in a new tab. The privacy policy was generated using https://www.privacypolicygenerator.info/
+
+![Items](documentation/images/)
 
 ## Future Features
 
@@ -197,33 +209,82 @@ The Avenue Louise website is based on the Code Institute Boutique Ado walkthroug
 
 ## Design
 
+-   ### Colours
+    - As the product and workshop images are very colourful, it was decided to keep the colour scheme minimal to keep the site looking clean and easy to navigate.
+    - The navbar and footer have a pale creamy pink background colour (#e8c7c8) which is also used on the testimonial slider buttons
+
 -   ### Wireframes
     - During project planning, a rough layout of the site was designed knowing that this would be altered in later stages of the development as functionality was prioritised at the start with aesthetics planned for the second stage of development.
 
     <details>
     <summary>Original Wireframe Design</summary>
 
-    ![Desktop Wireframes](documentation/images/desktop_wf_home.png)
+    ![Original Wireframe](documentation/images/desktop_wf_home.png)
     </details>
   
       <details>
-    <summary>Final Desktop Wireframes</summary>
+    <summary>Updated Homepage Wireframes</summary>
 
-    ![Desktop Wireframes](documentation/images/)
+    ![Desktop Wireframes](documentation/images/updated-hp-design.png)
+    ![Mobile Wireframes](documentation/images/updated-hp-design-mobile.png)
+    </details>
+
+    <details>
+    <summary>Products and Workshops Wireframes</summary>
+
+    ![Desktop Wireframes](documentation/images/desktop_products.png)
+    ![Mobile Wireframes](documentation/images/mobile_products.png)
+    </details>
+
+    <details>
+    <summary>Products and Workshops Details Wireframes</summary>
+
+    ![Desktop Wireframes](documentation/images/desktop_product_detail.png)
+    ![Mobile Wireframes](documentation/images/mobile_product_detail.png)
     </details>
 
 -   ### Entity-Relationship diagram for DBMS
 
-    - The below diagram visually represents how the database models are connected ...
+    - The below diagram visually represents how the database models are connected.
+    - The User data is captured during user registration and is handled by django.
+    - The Product model is adapted from the Boutique ado application by adding height, width and in stock 
+    - The Order, OrderLineItem, UserProfile and Category tables are the same as Boutique Ado and have not been customised
+    - The Workshop, WorkshopContact, ContactUs and Testimonials models have been created from scratch in line with data requirements
 
     <details>
     <summary>Database Schema</summary>
 
-    ![Desktop Wireframes](documentation/images/db-schema.png)
+    ![Desktop Wireframes](documentation/images/database_schema.png)
     </details>
 
 ## Planning
 
+- The ideal user is:
+
+  - anyone who is interested in buying textile art or taking part in one of our workshops
+ 
+- Site goals:
+
+  - To provide users with a platform to buy textile art
+  - To provide users with a platform to contact the company about workshops
+
+    ### Agile Kanban board
+
+    - Link to Github Project board that User Storires were added and managed from [Avenue Louise Agile Tool](https://github.com/users/Louibens/projects/5)
+    - There are 3 EPICS - MVP (functionality), LAYOUT (visual design), TESTING
+    - The User Stories are organised into EPICS and they have acceptance criteria, tasks and labels to show whether the requirement was Must Have, Could Have, Won't have.
+
+    <details>
+    <summary>Kanban Board</summary>
+
+    ![Kanban](documentation/images/)
+    </details>
+
+    <details>
+    <summary>EPIC/USER STORIES/TASKS</summary>
+
+    ![EPIC/USER STORIES/TASKS](documentation/images/)
+    </details>
 
 ## Technologies Used
 
@@ -232,8 +293,27 @@ The Avenue Louise website is based on the Code Institute Boutique Ado walkthroug
 -   [HTML5](https://en.wikipedia.org/wiki/HTML5)
 -   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
 -   [Python](https://www.python.org/)
+-   [jQuery](https://jquery.com/)
 
 ### Frameworks, Libraries & Programs Used  
+
+-   [Google Fonts:](https://fonts.google.com/) used for the Raleway font.
+-   [Font Awesome:](https://fontawesome.com/) was used to add social network icons.
+-   [Git:](https://git-scm.com/) was used for version control by utilising the Gitpod terminal to commit to Git and Push to GitHub.
+-   [GitHub:](https://github.com/) is used as the respository for the project code after being pushed from Git. GitHub projects was use to set up a Kanban board to facilitate the Agile development standards.
+-   [Balsamiq:](https://balsamiq.com/) was used to create the wireframes during the design process.
+-   [Django](https://www.djangoproject.com/) was used as the framework 
+-   [Bootstrap](https://getbootstrap.com/) was used to build responsive web pages
+-   [Gunicorn](https://gunicorn.org/) was used as the Web Server to run Django on Heroku
+-   [dj_database_url](https://pypi.org/project/dj-database-url/) library used to allow database urls to connect to the postgres db
+-   [psycopg2](https://pypi.org/project/psycopg2/) database adapter used to support the connection to the postgres db
+-   [AWS](https://aws.amazon.com/) used to store the images and static files used by the application
+-   [Django allauth](https://django-allauth.readthedocs.io/en/latest/index.html) used for account registration and authentication
+-   [Django crispy forms](https://django-crispy-forms.readthedocs.io/en/latest/) used to simplify form rendering
+-   [Django Pillow](https://pypi.org/project/Pillow/) to enable image processing capabilities
+-   [Stripe](https://stripe.com/) to enable secure payment processing capabilities
+-   [ElephantSQL](https://www.elephantsql.com/) to host the applications Postgres database
+-   [Heroku](https://www.heroku.com/) used to host the deployed back-end site
 
 ## Testing
 
