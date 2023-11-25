@@ -128,6 +128,28 @@ The Avenue Louise website is based on the Code Institute Boutique Ado walkthroug
 
 ![Product_Details](documentation/images/AL_product_details.png)
 
+-   ### F08 SHOPPING BAG
+
+    - User can see products that they have added to the bag and the total
+    - A 'Continue to Checkout' button will be displayed
+
+![Shopping Bag](documentation/images)
+
+-   ### F08 CHECKOUT
+
+    - User enter their delivery details and payment information to buy products
+    - User will see 'Complete Order' button to make final payment
+    - User will be directed to a success page following successful payment
+
+![Checkout](documentation/images)
+
+-   ### F08 MY PROFILE
+
+    - When a user is logged in they will see My Profile within the My Account dropdown menu
+    - The user can save or update their delivery information and see a summary of previous orders
+
+![MyProfile](documentation/images/profile_page.png)
+
 -   ### F09 WORKSHOPS
 
     - The workshops page displays a full listing of all workshops on separate cards. 
