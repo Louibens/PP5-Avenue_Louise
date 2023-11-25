@@ -9,7 +9,7 @@ class Workshops(models.Model):
     price = models.DecimalField(max_digits=6, decimal_places=2)
     location = models.CharField(max_length=254)
     date = models.DateTimeField()
-    spaces = models.DecimalField(max_digits=6, decimal_places=0)
+    spaces = models.DecimalField(max_digits=2, decimal_places=0)
     image = ResizedImageField(
         size=[None, 400],
         quality=75,
