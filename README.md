@@ -326,6 +326,75 @@ The Avenue Louise website is based on the Code Institute Boutique Ado walkthroug
 
 ## Deployment 
 
+Detailed below are instructions on how to clone and fork this project repository and the steps to configure and deploy the application.  
+
+1. How to Clone the Repository
+2. How to Fork the Repository
+3. Create Application and Postgres DB on Heroku
+4. Configure AWS to host images and static files used by the application
+5. Connect the Heroku app to the GitHub repository
+6. Final Deployment steps
+
+### 1. How to Clone the Repository 
+
+- Go to the https://github.com/Louibens/PP5-Avenue_Louise repository on GitHub 
+- Click the "Code" button to the right of the screen, click HTTPs and copy the link there
+- Open a GitBash terminal and navigate to the directory where you want to locate the clone
+- On the command line, type "git clone" then paste in the copied url and press the Enter key to begin the clone process
+- To install the packages required by the application use the command : pip install -r requirements.txt
+- When developing and running the application locally set DEBUG=True in the settings.py file
+- Changes made to the local clone can be pushed back to the repository using the following commands :
+
+  - git add *filenames*  (or "." to add all changed files)
+  - git commit -m *"text message describing changes"*
+  - git push
+
+- N.B. Any changes pushed to the master branch will take effect on the live project once the application is re-deployed from Heroku
+
+### 2. How to fork the repository
+
+- Go to the https://github.com/Louibens/PP5-Avenue_Louise repository on GitHub 
+- Click the "Fork" button in the top right corner
+
+### 3. Create Application and Postgres DB on Heroku
+- Log in to Heroku at https://heroku.com - create an account if needed.
+- From the Heroku dashboard, click the Create new app button.  
+- On the Create New App page, enter a unique name for the application and select region.  Then click Create app.
+- On the Application Configuration page for the new app, click on Settings on the Application Configuration page and click on the "Reveal Config Vars" button - add the necessary variables.
+- In Gitpod, in the project terminal window, to initialize the data model in the postgres database, run the command : python3 manage.py migrate 
+- Make sure the project requirements.txt file is up to date with all necessary supporting files by entering the command : pip3 freeze --local > requirements.txt
+- Commit and push any local changes to GitHub.
+- In order to be able to run the application on localhost
+
+### 4. Configure AWS S3 bucket to host images and static files used by the application
+- Log in to AWS - create an account if needed.  
+- Click on S3 from Services menu and create a new bucket and allow public access by unchecking "Block all public access"
+- Turn on static website hosting within the properties section
+- In the permissions section, configure CORS and Generate a policy
+- Create a User through IAM
+- Download and save the generated csv which contains the users access and secret access keys
+- Update the settings.py file for 'USE_AWS' with the bucket name and region
+- Add the AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY config vars to heroku using the values from the downloaded cvs
+- Add USE_AWS = True to the Heroku config vars
+
+### 5. Connect the Heroku app to the GitHub repository
+- Go to the Application Configuration page for the application on Heroku and click on the Deploy tab.
+- Select GitHub as the Deployment Method and if prompted, confirm that you want to connect to GitHub. Enter the name of the github repository (https://github.com/Louibens/PP5-Avenue_Louise) and click on Connect to link up the Heroku app to the GitHub repository code.
+- Scroll down the page and choose to either Automatically Deploy each time changes are pushed to GitHub, or Manually deploy - for this project Manual Deploy was selected.
+- The application can be run from the Application Configuration page by clicking on the Open App button.
+- The live link for this project is (https://avenue-louise-d68884ca43c9.herokuapp.com/)
+
+### 6. Final Deployment steps
+Once code changes have been completed and tested on localhost, the application can be prepared for Heroku deployment as follows :
+- Set DEBUG flag to False in settings.py
+- Ensure requirements.txt is up to date using the command : pip3 freeze --local > requirements.txt
+- Push files to GitHub
+- In the Heroku Config Vars for the application delete this environment variable :  DISABLE_COLLECTSTATIC
+- On the Heroku dashboard go to the Deploy tab for the application and click on deploy branch
+
+#### The live link to the application can be found here - [Avenue Louise](https://avenue-louise-d68884ca43c9.herokuapp.com/) 
+
+
 
 ## Credits 
 
