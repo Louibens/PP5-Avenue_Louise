@@ -25,7 +25,12 @@ body {
 }
 
 .navbar {    
-    background-color: #e8c7c8 !important
+    background-color: #e8c7c8 !important;
+    font-weight: 700
+}
+
+.nav-item {
+    font-weight: 700;
 }
 
 .intro {

@@ -2,12 +2,13 @@
 
 [View the live project here](https://avenue-louise-d68884ca43c9.herokuapp.com/)
 
-Avenue Louise is a B2C e-commerce application which sells textile arts. Users can view, search and filter the products on offer, add products to their shopping cart and purchase through a secure single payment.
+Avenue Louise is a B2C e-commerce application which sells textile arts and offers workshops. Users can view, search and filter the products on offer, add products to their shopping cart and purchase through a secure single payment.
+Users can view the workshops on offer and complete a form to make further enquiries.
 
-Add amireponsive image
+![AmIResponsive](documentation/images/amiresponsive_AL.png)
 
 The Web Marketing strategies used by the project are :
-- Organic Social - through facebook and instagram
+- Organic Social - through Facebook and Instagram
 - Email - through a newletter subscription managed via Mailchimp
 
 The Avenue Louise website is based on the Code Institute Boutique Ado walkthrough example application.
@@ -28,17 +29,17 @@ The Avenue Louise website is based on the Code Institute Boutique Ado walkthroug
 
 -   #### Developer Goals
 
-1. As a developer, I want to be able to setup Django and install required libraries to enable me to develop the site effectively and efficiently
-2. As a developer, I want to setup a base template to enable me to maintain structure and styling across all pages of the website
-3. As a developer I can create and implement a database model so that the Site Admin can upload images and details of products
-4. As a developer, I want to setup Authentication to enable me to create a superuser and users to set up an account
+1. As a **developer**, I want to **be able to setup Django and install required libraries** to **enable me to develop the site effectively and efficiently**
+2. As a **developer**, I want to **setup a base template** to **enable me to maintain structure and styling across all pages of the website**
+3. As a **developer**, I can **create and implement a database model** so that **the Site Admin can upload images and details of products**
+4. As a **developer**, I want to **setup Authentication** to **enable me to create a superuser and users to set up an account**
 
 -   #### Visitor Goals
 
 1. As a **user** I can **clearly see how to navigate the website from the nav bar** so that **I can easily find what I am looking for**
-2. As a **user** I can **see a footer at the bottom of the page** so that **I can find company info and links to social sites**
+2. As a **user** I can **see a footer at the bottom of the page** so that **I can find links to social sites and the email sign up form**
 3. As an **unregistered user**, I want to be able to easily register on the website in order to save my details and keep track of previous orders
-4. As a **user**, I want to **be able to browser through the products** to **find items that I might want to buy**
+4. As a **user**, I want to **be able to browse through the products** to **find items that I might want to buy**
 5. As a **user** I can **view details for a specific product** so that **I can learn more about it**
 6. As a **registered user**, I want to **be able to view my profile** so that I can **update my details and view past orders**
 7. As a **user** I can **easily reset my password in case I forget** so that **I can recover access to my account**
@@ -48,6 +49,12 @@ The Avenue Louise website is based on the Code Institute Boutique Ado walkthroug
 11. As a **user** I can **complete my order on the checkout page** so that **I can verify the total is correct, enter my details and make payment**
 12. As a **user** I can **view an order confirmation after checkout** so that **I can see what was ordered and total costs**
 13. As a **user** I can **receive an email confirmation after checking out** so that **I have a record of my purchases**
+14. As a **user**, I want to **be able to browse through the workshops** to **find workshops that I am interested in**
+15. As a **user** I can **view details for a specific workshop** so that **I can learn more about it**
+16. As a **user** I can **fill in a form** so that **I can contact the company to enquire about signing up for a workshop**
+17. As a **user** I can **see testimonials** so that **I can feel confident about the quality of service provided by the company**
+18. As a **user** I can **go to the About Us page** so that **find out more information about the company**
+19. As a **user** I can **go to the Contact Us page** to **fill in a form to contact the company**
 
 ## Features
 
@@ -59,7 +66,7 @@ The Avenue Louise website is based on the Code Institute Boutique Ado walkthroug
     - A user can click on the logo to bring them to the homepage
     - The logo was created on freelogodesign.org website. 
 
-![Logo](documentation/images/)
+![Logo](documentation/images/AL_logo.png)
 
  -  ### F02 NAV BAR
 
@@ -67,12 +74,12 @@ The Avenue Louise website is based on the Code Institute Boutique Ado walkthroug
     - The nav bar will also display a link to the Admin panel if the admin user is logged in.
     - The search box enables users to search for specific items by keyword from description or title.
 
-![NavBar](documentation/images/)
+![NavBar](documentation/images/AL_navbar.png)
 
 
--   ### F04 MAIN MENU
+-   ### F04 SHOP DROPDOWN MENU
 
-    - The menu provides links to item categories for ease of navigation
+    - The menu provides links to product categories for ease of navigation
 
 ![MainMenu](documentation/images/)
 
