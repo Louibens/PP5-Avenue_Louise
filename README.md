@@ -76,97 +76,141 @@ The Avenue Louise website is based on the Code Institute Boutique Ado walkthroug
 
 ![NavBar](documentation/images/AL_navbar.png)
 
+-   ### F03 SHOP DROPDOWN MENU
 
--   ### F04 SHOP DROPDOWN MENU
+    - The Shop dropdown menu provides links to product categories for ease of navigation
 
-    - The menu provides links to product categories for ease of navigation
+![ShopMenu](documentation/images/AL_shop_dd_menu.png)
 
-![MainMenu](documentation/images/)
+-   ### F03 MY ACCOUNT DROPDOWN MENU
 
--   ### F05 FOOTER
+    - The My Account dropdown menu will display Sign In and Register links if user is not signed in
+    - If user is signed in they will see My Profile and Logout links
+    - If the admin is logged in they will see links to Product Management, Workshop Management, Testimonial Management, My Profile and Logout links
 
-    - Links to 4 social networks to enable users to connect with us through our social channels
+![MyAccountMenu](documentation/images/AL_myaccount_dd_menu.png)
+![MyAccountMenu](documentation/images/AL_myaccount_dd_menu_user.png)
+![MyAccountMenu](documentation/images//AL_myaccount_dd_menu_admin.png)
 
-![Footer](documentation/images/)
+-   ### F05 HOMEPAGE
 
--   ### F06 PRODUCTS PAGE
+    - Homepage displays 3 categories(Collections) cards with links to products of that specified category
+    - Welcome message
+    - 3 workshop cards with links to view all workshops
+    - Testimonials carousel
+
+![Homepage](documentation/images/AL_categories.png)
+![Homepage](documentation/images/AL_workshops.png)
+![Homepage](documentation/images/AL_testimonials.png)
+
+-   ### F06 FOOTER
+
+    - Links to 2 social networks to enable users to connect with us through our social channels
+    - Form to sign up to email subscription which is managed through MailChimp
+    - Link to Privacy Policy 
+
+![Footer](documentation/images/AL_footer.png)
+
+-   ### F07 PRODUCTS PAGE
 
     - Full listing of all products on separate cards. 
     - Each card displays an image of the product title, category and price
-    - The page will show 12 products and the user can click the Next button to see the next 12
-)
+    - Number of products displayed is shown
+    - Edit and Delete links will be visible to the admin user
 
--   ### F08 DETAILS PAGE
+![Products](documentation/images/AL_products.png)
+
+-   ### F08 PRODUCT DETAILS PAGE
 
     - User can see large image of the product, detailed description, size and price. 
     - They can choose to Add to basket or continue shopping
+    - Edit and Delete links will be visible to the admin user
 
-![Items](documentation/images/)
+![Product_Details](documentation/images/AL_product_details.png)
 
+-   ### F09 WORKSHOPS
 
--   ### F11 WELCOME MESSAGE
+    - The workshops page displays a full listing of all workshops on separate cards. 
+    - Each card displays a reference image for the workshop, snippet of description and a link to see more details
 
-    - The welcome message will provide the user with information about the company and call to action to view/buy products
+![Workshops](documentation/images/AL_workshops_page.png)
 
-![Items](documentation/images/)
+-   ### F08 WORKSHOP DETAILS PAGE
+
+    - User can see image for the workshop, detailed description, location, date, price and number of places available. 
+    - They can choose to 'Contact Us to Book In' or keep shopping. The 'Contact Us to Book In' button will bring the user to a form to contact the company.
+    - Edit and Delete links will be visible to the admin user
+
+![Product_Details](documentation/images/AL_workshop_details.png)
 
 -   ### F12 ABOUT US PAGE
 
     - This page is for information about the company and gives customers confidence to purchase from the e-store.
 
-![Items](documentation/images/) 
+![AboutUs](documentation/images/AL_about.png) 
 
--   ### F13 EDIT FUNCTION
+-   ### F12 CONTACT US PAGE
 
-    - The admin user can update/amend products
+    - This page provides the user with a form they can complete to contact the company
+
+![ContactUs](documentation/images/AL_contact.png) 
+
+-   ### F13 EDIT FUNCTION - WORKSHOPS AND PRODUCTS
+
+    - The admin user can update/amend products and workshops
+    - Alert message will be displayed to notify admin which product or workshop they are editing
+    - Success messages will be displayed when product or whorkshop has successfully been updated
 
 ![Items](documentation/images/)
 
--   ### F14 DELETE FUNCTION
+-   ### F14 DELETE FUNCTION - WORKSHOPS AND PRODUCTS
 
-    - The admin user can delete products
+    - The admin user can delete products or workshops
+    - The admin user must confirm that they want to go ahead with deletion
+    - Success messages will be displayed when product or workshop has been deleted 
+
+![Items](documentation/images/)
+
+-   ### F14 ACCOUNT MANAGEMENT
+
+    - The admin user can add Products, Workshops and Testimonials when they are logged in
+    - Success messages will be displayed when product, workshop or testimonial has been added 
 
 ![Items](documentation/images/)
 
 -   ### F15 AllAuth pages
 
-    - In order for a user to be able to save their details they will need to register on the site and be signed.
+    - In order for a user to be able to save their details they will need to register on the site and be signed in.
     - The sign in, sign up and logout allauth pages have been styled using crispy forms
     - If the user registers or logs in, they will get a success message to confirm.
+    - When the user logs out, they will need to confirm that action and then they get a success message to confirm.
 
 ![Items](documentation/images/)
 
 
 ## Future Features
 
--   ### Reviews
-
-    - Customer reviews would be displayed on the home page to improve customer confidence in the company and purchasing products.
-
--   ### Workshops
-
-    - A workshop page would show available workshop details and enable users to add to cart and buy.
-
 -   ### Commissions
 
     - A commissions page would include a form where users can fill in details of artwork that they would like to commission
-
--   ### Contact Us 
-
-    - In order to receive feedback and hear from our users it would be good to have a Contact Us form
 
 
 ## Design
 
 -   ### Wireframes
-    - The wireframe diagrams show how the site was designed for desktop....
+    - During project planning, a rough layout of the site was designed knowing that this would be altered in later stages of the development as functionality was prioritised at the start with aesthetics planned for the second stage of development.
 
     <details>
-    <summary>Desktop Wireframes</summary>
+    <summary>Original Wireframe Design</summary>
 
     ![Desktop Wireframes](documentation/images/desktop_wf_home.png)
     </details>
   
+      <details>
+    <summary>Final Desktop Wireframes</summary>
+
+    ![Desktop Wireframes](documentation/images/)
+    </details>
 
 -   ### Entity-Relationship diagram for DBMS
 
