@@ -27,6 +27,14 @@ The Avenue Louise website is based on the Code Institute Boutique Ado walkthroug
 
 ### User stories :
 
+-   #### Store Owner Goals
+
+1. As a **store owner**, I want **an e-commerce website** to **enable me to sell my products online**
+2. As a **store owner**, I want **a website** to **advertise the workshops that I offer**
+3. As a **store owner**, I want to **optimise the website SEO and search engine rankings** so **that potential customers can find the website easily**
+4. As a **store owner**, I want to **easily be able to add products, workshops and testimonials** so **that i can keep my website up to date**
+5. As a **store owner**, I want **a contact form** so **that site users or customers can easily contact me**
+
 -   #### Developer Goals
 
 1. As a **developer**, I want to **be able to setup Django and install required libraries** to **enable me to develop the site effectively and efficiently**
@@ -105,7 +113,7 @@ The Avenue Louise website is based on the Code Institute Boutique Ado walkthroug
 
 -   ### F06 FOOTER
 
-    - Links to 2 social networks to enable users to connect with us through our social channels
+    - Links to 3 social networks to enable users to connect with us through our social channels
     - Form to sign up to email subscription which is managed through MailChimp
     - Link to Privacy Policy 
 
@@ -133,7 +141,7 @@ The Avenue Louise website is based on the Code Institute Boutique Ado walkthroug
     - User can see products that they have added to the bag and the total
     - A 'Continue to Checkout' button will be displayed
 
-![Shopping Bag](documentation/images)
+![Shopping Bag](documentation/images/AL_shopping_bag.png)
 
 -   ### F08 CHECKOUT
 
@@ -141,7 +149,8 @@ The Avenue Louise website is based on the Code Institute Boutique Ado walkthroug
     - User will see 'Complete Order' button to make final payment
     - User will be directed to a success page following successful payment
 
-![Checkout](documentation/images)
+![Checkout](documentation/images/AL_checkout.png)
+![Checkout_Success](documentation/images/checkout_success_page.png)
 
 -   ### F08 MY PROFILE
 
@@ -183,7 +192,7 @@ The Avenue Louise website is based on the Code Institute Boutique Ado walkthroug
     - Alert message will be displayed to notify admin which product or workshop they are editing
     - Success messages will be displayed when product or whorkshop has successfully been updated
 
-![Items](documentation/images/)
+![Edit](documentation/images/AL_edit.png)
 
 -   ### F14 DELETE FUNCTION - WORKSHOPS AND PRODUCTS
 
@@ -191,7 +200,7 @@ The Avenue Louise website is based on the Code Institute Boutique Ado walkthroug
     - The admin user must confirm that they want to go ahead with deletion
     - Success messages will be displayed when product or workshop has been deleted 
 
-![Items](documentation/images/)
+![Delete](documentation/images/AL_confirm_delete.png)
 
 -   ### F14 ACCOUNT MANAGEMENT
 
