@@ -1,7 +1,7 @@
 from django.contrib import admin
 from .models import Workshops, WorkshopContact
 
-# Register your models here.
+
 admin.site.register(Workshops)
 
 @admin.register(WorkshopContact)

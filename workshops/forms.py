@@ -59,6 +59,7 @@ class WorkshopEnquiryForm(forms.ModelForm):
         self.fields['workshop_enquiry'].widget.attrs.update({
             'class': 'form-control',
             'placeholder': textwrap.dedent('''\
-                Enter your workshop enquiry and we will get back to you with further information and booking details
+                Enter your workshop enquiry and we will get \
+back to you with further information and booking details
                 ''')
         })

@@ -3,7 +3,6 @@ from products.models import Product
 from testimonials.models import Testimonial
 from .forms import ContactUsForm
 
-# Create your views here.
 
 def Index(request):
     """ A view to return the index page """

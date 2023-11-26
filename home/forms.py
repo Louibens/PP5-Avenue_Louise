@@ -2,6 +2,7 @@ from django import forms
 from .models import ContactUs
 import textwrap
 
+
 class ContactUsForm(forms.ModelForm):
     """Form for site user to contact the shop"""
     class Meta:

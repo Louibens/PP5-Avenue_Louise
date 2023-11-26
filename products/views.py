@@ -18,7 +18,7 @@ def all_products(request):
     products = Product.objects.all()
     query = None
     categories = None
-   
+
     if 'category' in request.GET:
         categories = request.GET['category'].split(',')
         products = products.filter(category__name__in=categories)
@@ -29,7 +29,7 @@ def all_products(request):
         if not query:
             messages.error(request, "You didn't enter any search criteria!")
             return redirect(reverse('products'))
-            
+
         queries = Q(name__icontains=query) | Q(description__icontains=query)
         products = products.filter(queries)
 
@@ -66,10 +66,12 @@ def add_product(request):
             return redirect(reverse('product_detail', args=[product.id]))
         else:
             print(form.errors)
-            messages.error(request, 'Failed to add product. Please ensure the form is valid.')
+            messages.error(
+                request,
+                'Failed to add product. Please ensure the form is valid.')
     else:
         form = ProductForm()
-        
+
     template = 'products/add_products.html'
     context = {
         'form': form,
@@ -87,13 +89,16 @@ def edit_product(request, product_id):
     product = get_object_or_404(Product, pk=product_id)
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES, instance=product)
-        if product.in_stock == True:
+        if product.in_stock:
             if form.is_valid():
                 form.save()
                 messages.success(request, 'Successfully updated product!')
                 return redirect(reverse('product_detail', args=[product.id]))
             else:
-                messages.error(request, 'Failed to update product. Please ensure the form is valid.')
+                messages.error(
+                    request,
+                    'Failed to update product. '
+                    'Please ensure the form is valid.')
         else:
             if form.is_valid():
                 form.save()
@@ -102,7 +107,7 @@ def edit_product(request, product_id):
     else:
         form = ProductForm(instance=product)
         messages.info(request, f'You are editing {product.name}')
-        
+
     template = 'products/edit_product.html'
     context = {
         'form': form,
