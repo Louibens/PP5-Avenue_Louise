@@ -43,7 +43,6 @@ body {
 .card-img-top {
     height: 25rem;
     width: auto;
-    max-width: 300px;
     border-radius: 10px;
     object-fit: cover;
 }
