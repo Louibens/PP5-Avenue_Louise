@@ -152,6 +152,13 @@ The Avenue Louise website is based on the Code Institute Boutique Ado walkthroug
 ![Checkout](documentation/images/AL_checkout.png)
 ![Checkout_Success](documentation/images/checkout_success_page.png)
 
+-   ### F08 CONFIRMATION EMAIL
+
+    - User will receive a confirmation email following successful purchase
+
+![Confirmation_Email](documentation/images/confirmation_email.png)
+
+
 -   ### F08 MY PROFILE
 
     - When a user is logged in they will see My Profile within the My Account dropdown menu
