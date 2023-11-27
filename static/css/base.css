@@ -41,9 +41,11 @@ body {
 }
 
 .card-img-top {
-    height: 388px;
+    height: 25rem;
     width: auto;
+    max-width: 300px;
     border-radius: 10px;
+    object-fit: cover;
 }
 
 .card-img-top:hover {
@@ -283,14 +285,12 @@ body {
 }
 
 .card {
-    width: 18rem;
-    height: 90%;
-    overflow: hidden;
+    width: auto;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; 
-    max-height: 700px;
     border: none
 }
 
