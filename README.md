@@ -80,7 +80,7 @@ The Avenue Louise website is based on the Code Institute Boutique Ado walkthroug
 
     - The navigation menu links include a search box, a user icon to access user profile and a link to the shopping cart
     - The nav bar will also display a link to the Admin panel if the admin user is logged in.
-    - The search box enables users to search for specific items by keyword from description or title.
+    - The search box enables users to search for specific products by keyword from description or title.
 
 ![NavBar](documentation/images/AL_navbar.png)
 
@@ -90,7 +90,7 @@ The Avenue Louise website is based on the Code Institute Boutique Ado walkthroug
 
 ![ShopMenu](documentation/images/AL_shop_dd_menu.png)
 
--   ### F03 MY ACCOUNT DROPDOWN MENU
+-   ### F04 MY ACCOUNT DROPDOWN MENU
 
     - The My Account dropdown menu will display Sign In and Register links if user is not signed in
     - If user is signed in they will see My Profile and Logout links
@@ -136,14 +136,14 @@ The Avenue Louise website is based on the Code Institute Boutique Ado walkthroug
 
 ![Product_Details](documentation/images/AL_product_details.png)
 
--   ### F08 SHOPPING BAG
+-   ### F09 SHOPPING BAG
 
     - User can see products that they have added to the bag and the total
     - A 'Continue to Checkout' button will be displayed
 
 ![Shopping Bag](documentation/images/AL_shopping_bag.png)
 
--   ### F08 CHECKOUT
+-   ### F10 CHECKOUT
 
     - User enter their delivery details and payment information to buy products
     - User will see 'Complete Order' button to make final payment
@@ -152,28 +152,28 @@ The Avenue Louise website is based on the Code Institute Boutique Ado walkthroug
 ![Checkout](documentation/images/AL_checkout.png)
 ![Checkout_Success](documentation/images/checkout_success_page.png)
 
--   ### F08 CONFIRMATION EMAIL
+-   ### F11 CONFIRMATION EMAIL
 
     - User will receive a confirmation email following successful purchase
 
 ![Confirmation_Email](documentation/images/confirmation_email.png)
 
 
--   ### F08 MY PROFILE
+-   ### F12 MY PROFILE
 
     - When a user is logged in they will see My Profile within the My Account dropdown menu
     - The user can save or update their delivery information and see a summary of previous orders
 
 ![MyProfile](documentation/images/profile_page.png)
 
--   ### F09 WORKSHOPS
+-   ### F13 WORKSHOPS
 
     - The workshops page displays a full listing of all workshops on separate cards. 
     - Each card displays a reference image for the workshop, snippet of description and a link to see more details
 
 ![Workshops](documentation/images/AL_workshops_page.png)
 
--   ### F08 WORKSHOP DETAILS PAGE
+-   ### F14 WORKSHOP DETAILS PAGE
 
     - User can see image for the workshop, detailed description, location, date, price and number of places available. 
     - They can choose to 'Contact Us to Book In' or keep shopping. The 'Contact Us to Book In' button will bring the user to a form to contact the company.
@@ -181,19 +181,25 @@ The Avenue Louise website is based on the Code Institute Boutique Ado walkthroug
 
 ![Product_Details](documentation/images/AL_workshop_details.png)
 
--   ### F12 ABOUT US PAGE
+-   ### F15 ABOUT US PAGE
 
     - This page is for information about the company and gives customers confidence to purchase from the e-store.
 
 ![AboutUs](documentation/images/AL_about.png) 
 
--   ### F12 CONTACT US PAGE
+-   ### F16 CONTACT US PAGE
 
     - This page provides the user with a form they can complete to contact the company
 
 ![ContactUs](documentation/images/AL_contact.png) 
 
--   ### F13 EDIT FUNCTION - WORKSHOPS AND PRODUCTS
+-   ### F17 TESTIMONIALS
+
+    - The Admin can add testimonials through a form on the application which auto populate in a carousel
+    - Testimonials are displayed on the home page and about us page
+
+
+-   ### F18 EDIT FUNCTION - WORKSHOPS AND PRODUCTS
 
     - The admin user can update/amend products and workshops
     - Alert message will be displayed to notify admin which product or workshop they are editing
@@ -201,7 +207,7 @@ The Avenue Louise website is based on the Code Institute Boutique Ado walkthroug
 
 ![Edit](documentation/images/AL_edit.png)
 
--   ### F14 DELETE FUNCTION - WORKSHOPS AND PRODUCTS
+-   ### F19 DELETE FUNCTION - WORKSHOPS AND PRODUCTS
 
     - The admin user can delete products or workshops
     - The admin user must confirm that they want to go ahead with deletion
@@ -209,14 +215,14 @@ The Avenue Louise website is based on the Code Institute Boutique Ado walkthroug
 
 ![Delete](documentation/images/AL_confirm_delete.png)
 
--   ### F14 ACCOUNT MANAGEMENT
+-   ### F20 ACCOUNT MANAGEMENT
 
     - The admin user can add Products, Workshops and Testimonials when they are logged in
     - Success messages will be displayed when product, workshop or testimonial has been added 
 
 ![Items](documentation/images/)
 
--   ### F15 AllAuth pages
+-   ### F21 AllAuth pages
 
     - In order for a user to be able to save their details they will need to register on the site and be signed in.
     - The sign in, sign up and logout allauth pages have been styled using crispy forms
@@ -225,16 +231,22 @@ The Avenue Louise website is based on the Code Institute Boutique Ado walkthroug
 
 ![Items](documentation/images/)
 
--   ### F15 Newsletter
+-   ### F22 NEWSLETTER
 
     - As part of the web marketing strategy, the site utilises the email subscription services managed by MailChimp.
     - The newsletter sign up form is located in the footer
 
 ![Items](documentation/images/)
 
--   ### F15 Privacy Policy
+-   ### F22 PRIVACY POLICY
 
     - In line with GDPR requirements, there is a link to the Privacy Policy located at the bottom of the footer and opens in a new tab. The privacy policy was generated using https://www.privacypolicygenerator.info/
+
+![Items](documentation/images/)
+
+-   ### F23 404 PAGE
+
+    - The user is directed to a custom 404 page if they try to access a page that doesn't exist
 
 ![Items](documentation/images/)
 
