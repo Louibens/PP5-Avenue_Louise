@@ -64,7 +64,6 @@ def checkout(request):
                 if product.count == 0:
                     product.change_in_stock()
                     product.save()
-                    print(product.in_stock)
             for item_id, item_data in bag.items():
                 try:
                     product = Product.objects.get(id=item_id)

@@ -80,7 +80,6 @@ The Avenue Louise website is based on the Code Institute Boutique Ado walkthroug
  -  ### F02 NAV BAR
 
     - The navigation menu links include a search box, a user icon to access user profile and a link to the shopping cart
-    - The nav bar will also display a link to the Admin panel if the admin user is logged in.
     - The search box enables users to search for specific products by keyword from description or title.
 
 ![NavBar](documentation/images/AL_navbar.png)
@@ -318,6 +317,11 @@ The Avenue Louise website is based on the Code Institute Boutique Ado walkthroug
 
   - To provide users with a platform to buy textile art
   - To provide users with a platform to contact the company about workshops
+
+- Stock:
+  - The products for sale on the website are unique pieces so there is only one of each item available. 
+  - If a user tries to add an item that is already in their bag, they will see a message pop up to tell them it is already in the bag.
+  - When an item has been purchased it will still be displayed but users will not be able to add it to their bag.
 
     ### Agile Kanban board
 
