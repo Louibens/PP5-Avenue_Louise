@@ -2,14 +2,15 @@
 
 [View the live project here](https://avenue-louise-d68884ca43c9.herokuapp.com/)
 
-Avenue Louise is a B2C e-commerce application which sells textile arts and offers workshops. Users can view, search and filter the products on offer, add products to their shopping cart and purchase through a secure single payment.
-Users can view the workshops on offer and complete a form to make further enquiries.
+Avenue Louise is a B2C e-commerce application which sells textile arts and offers workshops with a strong empahsise on sustainability and our impact on the world around us. Avenue Louise is a small Irish business that cares about the materials that go into the products and strives to ensure a zero waste practise. Visitors to the Avenue Louise website will be interested to see the hand-crafted products and the workshops that we offer. 
+Users can view, search and filter the products on offer, add products to their shopping cart and purchase through a secure single payment.
+Users can view the workshops on offer and complete a form to make further enquiries. They can find out more about the business on the About Us page or get in touch using the Contact form.
 
+Following SEO optimisation, the Web Marketing strategies used by the project are :
+- Organic Social - through Facebook and Instagram.
+- Email - through a newletter subscription managed via Mailchimp.
+- The new website launch will be promoted to users via social media and newsletter to drive traffic to the site.
 ![AmIResponsive](documentation/images/amiresponsive_AL.png)
-
-The Web Marketing strategies used by the project are :
-- Organic Social - through Facebook and Instagram
-- Email - through a newletter subscription managed via Mailchimp
 
 The Avenue Louise website is based on the Code Institute Boutique Ado walkthrough example application.
 
@@ -321,8 +322,18 @@ The Avenue Louise website is based on the Code Institute Boutique Ado walkthroug
     ### Agile Kanban board
 
     - Link to Github Project board that User Storires were added and managed from [Avenue Louise Agile Tool](https://github.com/users/Louibens/projects/5)
-    - There are 3 EPICS - MVP (functionality), LAYOUT (visual design), TESTING
+    - There are 3 MILESTONES - MVP (functionality), LAYOUT (visual design), TESTING 
     - The User Stories are organised into EPICS and they have acceptance criteria, tasks and labels to show whether the requirement was Must Have, Could Have, Won't have.
+    - EPICS are 
+    1. Initial set up
+    2. Admin and Store Management
+    3. Viewing and Navigation
+    4. Databases
+    5. Registration and Account Management
+    7. Purchasing and Checkout
+    8. Workshops
+    9. Testimonials
+    10. SEO
 
     <details>
     <summary>Kanban Board</summary>
