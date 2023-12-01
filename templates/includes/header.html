@@ -20,7 +20,7 @@
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="text-right collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="col-12 col-lg-5 text-right collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
                     <a class="nav-link {% if url_name == 'home' %}active{% endif %}" href="{% url 'home' %}">Home</a>
@@ -49,7 +49,7 @@
             </ul>
             </div>
     <!-- Search box -->
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+            <div class="col-12 col-lg-3 my-auto py-1 py-lg-0">
                 <form method="GET" action="{% url 'products' %}">
                     <div class="input-group w-100">
                         <input class="form-control border border-black rounded-0" type="text" name="q"
@@ -65,7 +65,7 @@
                 </form>
             </div>
     <!-- My Account menu -->
-        <ul class="navbar-nav mr-auto">
+        <ul class="col-12 col-lg-3 navbar d-flex justify-content-sm-between justify-content-lg-around w-100">
             <li class="nav-link dropdown">
                 <a class="nav-link dropdown-toggle text-black" href="#" role="button" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
