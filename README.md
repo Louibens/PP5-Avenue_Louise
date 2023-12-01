@@ -256,6 +256,9 @@ The Avenue Louise website is based on the Code Institute Boutique Ado walkthroug
 
     - A commissions page would include a form where users can fill in details of artwork that they would like to commission
 
+-   ### Blog
+
+    - A blog would help build the company brand and help with generating organic traffic through search engines
 
 ## Design
 
