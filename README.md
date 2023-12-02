@@ -385,12 +385,7 @@ The Avenue Louise website is based on the Code Institute Boutique Ado walkthroug
 -   [Heroku](https://www.heroku.com/) used to host the deployed back-end site
 
 ## Testing
-
-### Validator Testing 
-
-### Manual Testing Test Cases and Results 
-
-### Known bugs
+Testing documentation can be found [here.](./TESTING.md)
 
 
 ## Deployment 
