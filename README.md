@@ -40,7 +40,7 @@ The Avenue Louise website is based on the Code Institute Boutique Ado walkthroug
 
 1. As a **developer**, I want to **be able to setup Django and install required libraries** to **enable me to develop the site effectively and efficiently**
 2. As a **developer**, I want to **setup a base template** to **enable me to maintain structure and styling across all pages of the website**
-3. As a **developer**, I can **create and implement a database model** so that **the Site Admin can upload images and details of products**
+3. As a **developer**, I can **create and implement database models** so that **the Site Admin can upload images and details of products, workshops and testimonials**
 4. As a **developer**, I want to **setup Authentication** to **enable me to create a superuser and users to set up an account**
 
 -   #### Visitor Goals
@@ -54,7 +54,7 @@ The Avenue Louise website is based on the Code Institute Boutique Ado walkthroug
 7. As a **user** I can **easily reset my password in case I forget** so that **I can recover access to my account**
 8. As a **user** I can **easily view the total of my purchases at any time** so that **I know how much money I am spending**
 9. As a **user** I can **add items to my shopping cart** so that **I can checkout and purchase**
-10. As a **user** I can **modify cart quantities and remove items from the shopping cart** so that **I can ensure I purchase the correct items and quantities**
+10. As a **user** I can **remove items from the shopping cart** so that **I can ensure I purchase the correct items**
 11. As a **user** I can **complete my order on the checkout page** so that **I can verify the total is correct, enter my details and make payment**
 12. As a **user** I can **view an order confirmation after checkout** so that **I can see what was ordered and total costs**
 13. As a **user** I can **receive an email confirmation after checking out** so that **I have a record of my purchases**
@@ -122,7 +122,7 @@ The Avenue Louise website is based on the Code Institute Boutique Ado walkthroug
 -   ### F07 PRODUCTS PAGE
 
     - Full listing of all products on separate cards. 
-    - Each card displays an image of the product title, category and price
+    - Each card displays an image of the product, product title, category and price
     - Number of products displayed is shown
     - Edit and Delete links will be visible to the admin user
 
@@ -267,7 +267,7 @@ The Avenue Louise website is based on the Code Institute Boutique Ado walkthroug
     - The navbar and footer have a pale creamy pink background colour (#e8c7c8) which is also used on the testimonial slider buttons
 
 -   ### Wireframes
-    - During project planning, a rough layout of the site was designed knowing that this would be altered in later stages of the development as functionality was prioritised at the start with aesthetics planned for the second stage of development.
+    - During project planning, a rough layout of the site was designed knowing that this would be altered in later stages of the development as functionality was prioritised at the start, with aesthetics planned for the second stage of development.
 
     <details>
     <summary>Original Wireframe Design</summary>
