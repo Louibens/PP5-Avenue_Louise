@@ -220,7 +220,7 @@ The Avenue Louise website is based on the Code Institute Boutique Ado walkthroug
     - The admin user can add Products, Workshops and Testimonials when they are logged in
     - Success messages will be displayed when product, workshop or testimonial has been added 
 
-![Items](documentation/images/)
+![Items](documentation/images/AL_add.png)
 
 -   ### F21 AllAuth pages
 
@@ -229,26 +229,26 @@ The Avenue Louise website is based on the Code Institute Boutique Ado walkthroug
     - If the user registers or logs in, they will get a success message to confirm.
     - When the user logs out, they will need to confirm that action and then they get a success message to confirm.
 
-![Items](documentation/images/)
+![Items](documentation/images/AL_signup.png)
 
 -   ### F22 NEWSLETTER
 
     - As part of the web marketing strategy, the site utilises the email subscription services managed by MailChimp.
     - The newsletter sign up form is located in the footer
 
-![Items](documentation/images/)
+![Items](documentation/images/AL_newsletter.png)
 
 -   ### F22 PRIVACY POLICY
 
     - In line with GDPR requirements, there is a link to the Privacy Policy located at the bottom of the footer and opens in a new tab. The privacy policy was generated using https://www.privacypolicygenerator.info/
 
-![Items](documentation/images/)
+![Items](documentation/images/AL_privacy.png)
 
 -   ### F23 404 PAGE
 
     - The user is directed to a custom 404 page if they try to access a page that doesn't exist
 
-![Items](documentation/images/)
+![Items](documentation/images/AL_404.png)
 
 ## Future Features
 
@@ -332,15 +332,16 @@ The Avenue Louise website is based on the Code Institute Boutique Ado walkthroug
     - There are 3 MILESTONES - MVP (functionality), LAYOUT (visual design), TESTING 
     - The User Stories are organised into EPICS and they have acceptance criteria, tasks and labels to show whether the requirement was Must Have, Could Have, Won't have.
     - EPICS are 
-    1. Initial set up
-    2. Admin and Store Management
+    1. Initial plan and dev set up
+    2. Registration & Account Management
     3. Viewing and Navigation
-    4. Databases
-    5. Registration and Account Management
-    7. Purchasing and Checkout
-    8. Workshops
+    4. Purchasing and Checkout
+    5. Admin and Store Management
+    7. Workshops
     9. Testimonials
-    10. SEO
+    10. Design and SEO
+    11. Validation
+    12. Manual Testing
 
     <details>
     <summary>Kanban Board</summary>
