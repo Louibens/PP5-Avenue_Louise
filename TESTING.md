@@ -8,6 +8,7 @@ Go back to [README.md](/README.md)
     - [Python](#python)
 - [Responsiveness](#Responsiveness)
 - [Lighthouse](#Lighthouse)
+- [Accessability](#Accessability)
 - [Manual Testing](#manual-testing)
 
 
@@ -69,19 +70,37 @@ W3C Validator flagged
 <details>
     <summary>Add a Product</summary>
 
-![Add a Product](documentation/images/)
+![Add a Product](documentation/HTML/add_product.png)
+&nbsp;
+
+HTML validation flagged an issue with a duplicated id (id="id_image"). Following investigation this is being generated in the custom_clearable_file_input.html file. Further research required to fix
 </details>
 
 <details>
     <summary>Add a Workshop</summary>
 
-![Add a Workshop](documentation/images/)
+![Add a Workshop](documentation/HTML/add_workshop.png)
 </details>
 
 <details>
     <summary>Add a Testimonial</summary>
 
-![Add a Testimonial](documentation/images/)
+![Add a Testimonial](documentation/HTML/add_testimonial.png)
+</details>
+
+<details>
+    <summary>Edit a Product</summary>
+
+![Edit a Product](documentation/HTML/edit_product.png)
+&nbsp;
+
+HTML validation flagged an issue with a duplicated id (id="id_image"). Following investigation this is being generated in the custom_clearable_file_input.html file. Further research required to fix
+</details>
+
+<details>
+    <summary>Edit a Workshop</summary>
+
+![Edit a Workshop](documentation/HTML/edit_workshop.png)
 </details>
 
 <details>
@@ -406,5 +425,76 @@ Issues flagged during python code validation were mainly lines too long or blank
 
 The site has been fully tested on different screen sizes to ensure users get an optimal experience whether accessing the site from a mobile or on a desktop computer. Bootstrap grid system is used to reposition elements depending on screensize. 
 
+<details>
+    <summary>Mobile Homepage</summary>
 
+![Mobile Homepage](documentation/mobile/home-mob.jpg)
+</details>
+
+<details>
+    <summary>Mobile Products</summary>
+
+![Mobile Products](documentation/mobile/products-mob.jpg)
+</details>
+
+<details>
+    <summary>Mobile Product Details</summary>
+
+![Mobile Product Details](documentation/mobile/product-details-mob.jpg)
+</details>
+
+<details>
+    <summary>Mobile Workshops</summary>
+
+![Mobile Workshops](documentation/mobile/workshops-mob.jpg)
+</details>
+
+<details>
+    <summary>Mobile Workshops Details</summary>
+
+![Mobile Workshops Details](documentation/mobile/workshop_details-mob.jpg)
+</details>
+
+<details>
+    <summary>Mobile About Us</summary>
+
+![Mobile About Us](documentation/mobile/about-mob-bug.jpg)
+</details>
+
+<details>
+    <summary>Mobile Contact Us</summary>
+
+![Mobile Contact Us](documentation/mobile/contact-mob.jpg)
+</details>
+
+## Lighthouse
+
+I used Lighthouse within the Chrome Developer Tools to allow me to test the performance, accessibility, best practices and SEO of the website.
+
+ - Desktop
+
+ ![Desktop](documentation/images/lighthouse_desktop.png)
+
+ - Mobile
+
+ ![Desktop](documentation/images/lighthouse_mobile.png)
+
+## Accessability
+
+The site was tested for accessability using the wave accessability tool (https://wave.webaim.org/). Any errors or contract errors have been resolved to ensure the site is optimised for individuals with disabilities.
+
+ ![Wave](documentation/images/wave.png)
+
+## Manual Testing
+
+- The below table details the 65 test cases that were used and the results and relates back to the website Features
+- There is also a "FAILED tests now fixed" section outlining the tests that failed and how they were fixed
+- Click the table to enlarge for better readability
+- These tests were carried out on desktop and mobile devices
+
+    <details>
+    <summary>Manual Testing Table</summary>
+
+    ![Manual Testing](documentation/images/testing-al.png)
+    </details>
 
