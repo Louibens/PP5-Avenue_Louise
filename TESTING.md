@@ -9,6 +9,7 @@ Go back to [README.md](/README.md)
 - [Responsiveness](#Responsiveness)
 - [Lighthouse](#Lighthouse)
 - [Accessability](#Accessability)
+- [Stripe](#Stripe)
 - [Manual Testing](#manual-testing)
 
 
@@ -485,6 +486,13 @@ The site was tested for accessability using the wave accessability tool (https:/
 
  ![Wave](documentation/images/wave.png)
 
+
+## Stripe
+
+- Stripe webhooks functioning successfully
+
+    ![Manual Testing](documentation/images/stripe.png)
+
 ## Manual Testing
 
 - The below table details the 65 test cases that were used and the results and relates back to the website Features
@@ -498,3 +506,7 @@ The site was tested for accessability using the wave accessability tool (https:/
     ![Manual Testing](documentation/images/testing-al.png)
     </details>
 
+
+
+
+Go back to [README.md](/README.md)

@@ -458,14 +458,20 @@ Once code changes have been completed and tested on localhost, the application c
 
 #### The live link to the application can be found here - [Avenue Louise](https://avenue-louise-d68884ca43c9.herokuapp.com/) 
 
-
-
 ## Credits 
 
 ### Code 
 
-### Content 
+- The testimonials carousel code and css are adapted from https://codepen.io/baahubali92/pen/BvdmLo
+- Following inital deployment, I had an issue where the css file was not updating in the dev environment. Tutor support advised to stop the dev environment, run collect_static and then do a hard refresh. This solution was not ideal as I like to add to css and then quickly view how the change looks. I found an alternate solution by commenting out     STATICFILES_STORAGE = 'custom_storages.StaticStorage' and     STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/' and updating USE_AWS in env.py to False
 
 ### Media 
 
+All images are my own and have been compressed using tinypng.com and converted to webp using convertio.co
+
 ### Acknowledgments
+
+- Thanks goes to my family who have given me the time and space to learn a lot during the building of this project and over the last 12 months. I am proud of what I have achieved thanks to their patience and understanding.
+- I had a new mentor for my last project, Dick Vlaanderen. He pushed me on the models side of the application which helped me to produce a better project.
+- I used Tutor Support a few times during this project and would like to thank them for their patience and support along with my cohort facilitator, Laura.
+- Thanks to the Code Institute for supporting me through this journey which I could not have even imagined this time 12 months ago.
