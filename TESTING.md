@@ -11,6 +11,7 @@ Go back to [README.md](/README.md)
 - [Accessability](#Accessability)
 - [Stripe](#Stripe)
 - [Manual Testing](#manual-testing)
+- [Additional Testing Comments](#additional-testing-comments)
 
 
 ## Code Validation
@@ -479,7 +480,7 @@ Images have been compressed using tinypng and converted to webp using convertio 
 
  - Mobile
 
- ![Desktop](documentation/images/lighthouse_mobile.png)
+ ![Desktop](documentation/images/lighthouse-mobile.png)
 
 ## Accessability
 
@@ -507,7 +508,18 @@ The site was tested for accessability using the wave accessability tool (https:/
     ![Manual Testing](documentation/images/testing-al.png)
     </details>
 
+### Additional Testing Comments
 
+- Testing has been carried out on the following browsers :
+
+    - Chrome Version 119.0.6045.200 (Official Build) (64-bit)
+    - Firefox Version 120.0.1 (64-bit)
+    - Edge Version 119.0.2151.97 (Official build) (64-bit)
+
+- Testing has also been carried out on desktop, laptop and smartphone for a variety of screen sizes.
+
+- 1 issue has been identified when testing on a couple of iphones. A couple of the images are being rotated. Further investigation and research is required to get this issue resolved.
+![Manual Testing](documentation/images/iphone.jpg)
 
 
 Go back to [README.md](/README.md)

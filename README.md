@@ -2,7 +2,7 @@
 
 [View the live project here](https://avenue-louise-d68884ca43c9.herokuapp.com/)
 
-Avenue Louise is a B2C e-commerce application which sells textile arts and offers workshops with a strong empahsise on sustainability and our impact on the world around us. Avenue Louise is a small Irish business that cares about the materials that go into the products and strives to ensure a zero waste practise. Visitors to the Avenue Louise website will be interested to see the hand-crafted products and the workshops that we offer. 
+Avenue Louise is a B2C e-commerce application which sells textile arts and offers workshops with a strong emphasise on sustainability and our impact on the world around us. Avenue Louise is a small Irish business that cares about the materials that go into the products and strives to ensure a zero waste practise. Visitors to the Avenue Louise website will be interested to see the hand-crafted products and the workshops that we offer. 
 Users can view, search and filter the products on offer, add products to their shopping cart and purchase through a secure single payment.
 Users can view the workshops on offer and complete a form to make further enquiries. They can find out more about the business on the About Us page or get in touch using the Contact form.
 
