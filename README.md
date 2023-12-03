@@ -260,6 +260,10 @@ The Avenue Louise website is based on the Code Institute Boutique Ado walkthroug
 
     - A blog would help build the company brand and help with generating organic traffic through search engines
 
+-   ### Multiple Images
+
+    - It would be beneficial to have pictures from different angles.
+
 ## Design
 
 -   ### Colours
@@ -328,10 +332,11 @@ The Avenue Louise website is based on the Code Institute Boutique Ado walkthroug
 
     ### Agile Kanban board
 
-    - Link to Github Project board that User Storires were added and managed from [Avenue Louise Agile Tool](https://github.com/users/Louibens/projects/5)
-    - There are 3 MILESTONES - MVP (functionality), LAYOUT (visual design), TESTING 
-    - The User Stories are organised into EPICS and they have acceptance criteria, tasks and labels to show whether the requirement was Must Have, Could Have, Won't have.
-    - EPICS are 
+    - Link to Github Project board that **User Storires** were added and managed from [Avenue Louise Agile Tool](https://github.com/users/Louibens/projects/5)
+    - There are **3 MILESTONES** - MVP (functionality), LAYOUT (visual design), TESTING. These were added to Columns on the Kanban board where completed user stories were moved to upon completion.
+    ![Kanban](documentation/images/kanban.png)
+    - The **User Stories** are organised into **EPICS** and they have acceptance criteria, tasks and labels to show whether the requirement was Must Have, Could Have, Won't have.
+    - **EPICS** are 
     1. Initial plan and dev set up
     2. Registration & Account Management
     3. Viewing and Navigation
@@ -343,17 +348,6 @@ The Avenue Louise website is based on the Code Institute Boutique Ado walkthroug
     11. Validation
     12. Manual Testing
 
-    <details>
-    <summary>Kanban Board</summary>
-
-    ![Kanban](documentation/images/)
-    </details>
-
-    <details>
-    <summary>EPIC/USER STORIES/TASKS</summary>
-
-    ![EPIC/USER STORIES/TASKS](documentation/images/)
-    </details>
 
 ## Technologies Used
 

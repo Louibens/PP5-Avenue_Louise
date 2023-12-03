@@ -471,6 +471,7 @@ The site has been fully tested on different screen sizes to ensure users get an 
 ## Lighthouse
 
 I used Lighthouse within the Chrome Developer Tools to allow me to test the performance, accessibility, best practices and SEO of the website.
+Images have been compressed using tinypng and converted to webp using convertio however performance could still be improved.
 
  - Desktop
 
