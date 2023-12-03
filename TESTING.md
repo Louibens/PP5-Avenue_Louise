@@ -7,10 +7,9 @@ Go back to [README.md](/README.md)
     - [JavaScript](#JavaScript)
     - [Python](#python)
 - [Responsiveness](#Responsiveness)
-- [Browser Compatibility](#browser-compatibility)
 - [Lighthouse](#Lighthouse)
 - [Manual Testing](#manual-testing)
-- [User Story Testing](#user-story-testing)
+
 
 ## Code Validation
 ### HTML
@@ -143,6 +142,8 @@ JSHint flagged one undefined variable which cannot be changed as it is required 
 
 ### Python
 
+Issues flagged during python code validation were mainly lines too long or blank spaces. All of the flagged issues have been resolved.
+
 - avenue_louise project app
 
 <details>
@@ -162,6 +163,7 @@ JSHint flagged one undefined variable which cannot be changed as it is required 
 
 ![views.py](documentation/python/avelou_views.py.png)
 </details>
+&nbsp;
 
 - bag app
 
@@ -182,6 +184,7 @@ JSHint flagged one undefined variable which cannot be changed as it is required 
 
 ![views.py](documentation/python/bag_views.py.png)
 </details>
+&nbsp;
 
 - checkout app
 
@@ -232,3 +235,176 @@ JSHint flagged one undefined variable which cannot be changed as it is required 
 
 ![webhooks.py](documentation/python/checkout_webhooks.py.png)
 </details>
+&nbsp;
+
+- home app
+
+<details>
+    <summary>admin.py</summary>
+
+![admin.py](documentation/python/home_admin.py.png)
+</details>
+
+<details>
+    <summary>forms.py</summary>
+
+![forms.py](documentation/python/home_forms.py.png)
+</details>
+
+<details>
+    <summary>models.py</summary>
+
+![models.py](documentation/python/home_models.py.png)
+</details>
+
+<details>
+    <summary>urls.py</summary>
+
+![urls.py](documentation/python/home_urls.py.png)
+</details>
+
+<details>
+    <summary>views.py</summary>
+
+![views.py](documentation/python/home_views.py.png)
+</details>
+&nbsp;
+
+- products app
+
+<details>
+    <summary>admin.py</summary>
+
+![admin.py](documentation/python/products_admin.py.png)
+</details>
+
+<details>
+    <summary>forms.py</summary>
+
+![forms.py](documentation/python/products_forms.py.png)
+</details>
+
+<details>
+    <summary>models.py</summary>
+
+![models.py](documentation/python/products_models.py.png)
+</details>
+
+<details>
+    <summary>urls.py</summary>
+
+![urls.py](documentation/python/products_urls.py.png)
+</details>
+
+<details>
+    <summary>views.py</summary>
+
+![views.py](documentation/python/products_views.py.png)
+</details>
+
+<details>
+    <summary>widgets.py</summary>
+
+![widgets.py](documentation/python/products_widgets.py.png)
+</details>
+&nbsp;
+
+- profiles app
+
+<details>
+    <summary>forms.py</summary>
+
+![forms.py](documentation/python/profiles_forms.py.png)
+</details>
+
+<details>
+    <summary>models.py</summary>
+
+![models.py](documentation/python/profiles_models.py.png)
+</details>
+
+<details>
+    <summary>urls.py</summary>
+
+![urls.py](documentation/python/profiles_urls.py.png)
+</details>
+
+<details>
+    <summary>views.py</summary>
+
+![views.py](documentation/python/profiles_views.py.png)
+</details>
+&nbsp;
+
+- testimonials app
+
+<details>
+    <summary>admin.py</summary>
+
+![admin.py](documentation/python/testimonials_admin.py.png)
+</details>
+
+<details>
+    <summary>forms.py</summary>
+
+![forms.py](documentation/python/testimonials_forms.py.png)
+</details>
+
+<details>
+    <summary>models.py</summary>
+
+![models.py](documentation/python/testimonials_models.py.png)
+</details>
+
+<details>
+    <summary>urls.py</summary>
+
+![urls.py](documentation/python/testimonials_urls.py.png)
+</details>
+
+<details>
+    <summary>views.py</summary>
+
+![views.py](documentation/python/testimonials_views.py.png)
+</details>
+&nbsp;
+
+- workshops app
+
+<details>
+    <summary>admin.py</summary>
+
+![admin.py](documentation/python/workshops_admin.py.png)
+</details>
+
+<details>
+    <summary>forms.py</summary>
+
+![forms.py](documentation/python/workshops_forms.py.png)
+</details>
+
+<details>
+    <summary>models.py</summary>
+
+![models.py](documentation/python/workshops_models.py.png)
+</details>
+
+<details>
+    <summary>urls.py</summary>
+
+![urls.py](documentation/python/workshops_urls.py.png)
+</details>
+
+<details>
+    <summary>views.py</summary>
+
+![views.py](documentation/python/workshops_views.py.png)
+</details>
+
+
+## Responsiveness
+
+The site has been fully tested on different screen sizes to ensure users get an optimal experience whether accessing the site from a mobile or on a desktop computer. Bootstrap grid system is used to reposition elements depending on screensize. 
+
+
+
