@@ -4,7 +4,7 @@
 
 Avenue Louise is a B2C e-commerce application which sells textile arts and offers workshops with a strong emphasise on sustainability and our impact on the world around us. Avenue Louise is a small Irish business that cares about the materials that go into the products and strives to ensure a zero waste practise. Visitors to the Avenue Louise website will be interested to see the hand-crafted products and the workshops that we offer. 
 Users can view, search and filter the products on offer, add products to their shopping cart and purchase through a secure single payment.
-Users can view the workshops on offer and complete a form to make further enquiries. They can find out more about the business on the About Us page or get in touch using the Contact form.
+Users can view the workshops on offer and complete a form to make further enquiries. They can find out more about the business on the About Us page or get in touch using the Contact form. The site admin can add, edit and delete products and workshops from the main site. The admin can also add Testimonials from the main site but would need to access the admin panel to edit or delete them. This is because the testimonials are displayed in a carousel where there is not an appropriate place to add edit or delete buttons.
 
 Following SEO optimisation, the Web Marketing strategies used by the project are :
 - Organic Social - through Facebook and Instagram.
@@ -336,6 +336,7 @@ The Avenue Louise website is based on the Code Institute Boutique Ado walkthroug
     - There are **3 MILESTONES** - MVP (functionality), LAYOUT (visual design), TESTING. These were added to Columns on the Kanban board where completed user stories were moved to upon completion.
     ![Kanban](documentation/images/kanban.png)
     - The **User Stories** are organised into **EPICS** and they have acceptance criteria, tasks and labels to show whether the requirement was Must Have, Could Have, Won't have.
+
     - **EPICS** are 
     1. Initial plan and dev set up
     2. Registration & Account Management
@@ -457,7 +458,7 @@ Once code changes have been completed and tested on localhost, the application c
 ### Code 
 
 - The testimonials carousel code and css are adapted from https://codepen.io/baahubali92/pen/BvdmLo
-- Following inital deployment, I had an issue where the css file was not updating in the dev environment. Tutor support advised to stop the dev environment, run collect_static and then do a hard refresh. This solution was not ideal as I like to add to css and then quickly view how the change looks. I found an alternate solution by commenting out     STATICFILES_STORAGE = 'custom_storages.StaticStorage' and     STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/' and updating USE_AWS in env.py to False
+- Following inital deployment, I had an issue where the css file was not updating in the dev environment. Tutor support advised to stop the dev environment, run collect_static and then do a hard refresh. This solution was not ideal as I like to add to css and then quickly view how the change looks. I found an alternate solution by commenting out     STATICFILES_STORAGE = 'custom_storages.StaticStorage' and     STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/' and updating USE_AWS in env.py to False. This solution resulted in a few extra commits as I needed to remember to undo where I had commented out as the automatic deployment through Heroku would fail.
 
 ### Media 
 
@@ -466,6 +467,6 @@ All images are my own and have been compressed using tinypng.com and converted t
 ### Acknowledgments
 
 - Thanks goes to my family who have given me the time and space to learn a lot during the building of this project and over the last 12 months. I am proud of what I have achieved thanks to their patience and understanding.
-- I had a new mentor for my last project, Dick Vlaanderen. He pushed me on the models side of the application which helped me to produce a better project.
+- I had a new mentor for my last project, Dick Vlaanderen. He pushed me on the models side of the application which helped me to produce a better project as well as improved my understanding.
 - I used Tutor Support a few times during this project and would like to thank them for their patience and support along with my cohort facilitator, Laura.
 - Thanks to the Code Institute for supporting me through this journey which I could not have even imagined this time 12 months ago.
