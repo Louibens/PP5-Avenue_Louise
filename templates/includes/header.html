@@ -75,6 +75,7 @@
                 <div class="dropdown-menu border-0">
                     {% if request.user.is_authenticated %}
                     {% if request.user.is_superuser %}
+                    <a href="https://avenue-louise-d68884ca43c9.herokuapp.com/admin/" class="dropdown-item">Admin</a>
                     <a href="{% url 'add_product' %}" class="dropdown-item">Add a Product</a>
                     <a href="{% url 'add_workshop' %}" class="dropdown-item">Add a Workshop</a>
                     <a href="{% url 'add_testimonial' %}" class="dropdown-item">Add a Testimonial</a>
